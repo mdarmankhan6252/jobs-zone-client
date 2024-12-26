@@ -1,0 +1,104 @@
+[
+  {
+    "logo": "[
+  {
+    "logo": "https://i.postimg.cc/pX9zDcrR/1.png",
+    "name": "Nethermind",
+    "jobs": 42,
+    "links": [
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "The easiest solutions to the hardest problems in blockchain.",
+    "tags": ["Blockchain", "Ethereum"]
+  },
+  {
+    "logo": "https://i.postimg.cc/BQdDN5PD/2.png",
+    "name": "Restaurant365",
+    "jobs": 91,
+    "links": [
+      { "label": "Salaries", "url": "https://example.com/salaries" },
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "Restaurant365 is a comprehensive, cloud-based restaurant management software.",
+    "tags": ["Restaurant Management Software", "Cloud Computing"]
+  },
+  {
+    "logo": "https://i.postimg.cc/XYd5PZ9P/3.png",
+    "name": "Mozilla",
+    "jobs": 53,
+    "links": [
+      { "label": "Salaries", "url": "https://example.com/salaries" },
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "A lot of companies say they’re mission-driven. Our unique corporate structure...",
+    "tags": ["Open Source", "Web Browser"]
+  }
+]
+",
+    "name": "Nethermind",
+    "jobs": 42,
+    "links": [
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "The easiest solutions to the hardest problems in blockchain.",
+    "tags": ["Blockchain", "Ethereum"]
+  },
+  {
+    "logo": "https://example.com/restaurant365-logo.png",
+    "name": "Restaurant365",
+    "jobs": 91,
+    "links": [
+      { "label": "Salaries", "url": "https://example.com/salaries" },
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "Restaurant365 is a comprehensive, cloud-based restaurant management software.",
+    "tags": ["Restaurant Management Software", "Cloud Computing"]
+  },
+  {
+    "logo": "https://example.com/mozilla-logo.png",
+    "name": "Mozilla",
+    "jobs": 53,
+    "links": [
+      { "label": "Salaries", "url": "https://example.com/salaries" },
+      { "label": "Benefits", "url": "https://example.com/benefits" },
+      { "label": "Tech stack", "url": "https://example.com/tech-stack" }
+    ],
+    "description": "A lot of companies say they’re mission-driven. Our unique corporate structure...",
+    "tags": ["Open Source", "Web Browser"]
+  }
+]
+
+
+
+
+---------------------
+[
+  {
+    name: "Nethermind",
+    jobs: "42 jobs",
+    description: "The easiest solutions to the hardest problems in blockchain.",
+    tags: ["Blockchain", "Ethereum"],
+    links: ["Benefits", "Tech stack"],
+  },
+  {
+    name: "Restaurant365",
+    jobs: "91 jobs",
+    description:
+      "Restaurant365 is a comprehensive, cloud-based restaurant management software.",
+    tags: ["Restaurant Management Software", "Cloud Computing"],
+    links: ["Salaries", "Benefits", "Tech stack"],
+  },
+  {
+    name: "Mozilla",
+    jobs: "53 jobs",
+    description:
+      "A lot of companies say they’re “mission-driven.” Our unique corporate structure...",
+    tags: ["Open Source", "Web Browser"],
+    links: ["Salaries", "Benefits", "Tech stack"],
+  },
+];
