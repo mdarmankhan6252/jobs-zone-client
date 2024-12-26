@@ -1,3 +1,4 @@
+import FindRemoteJob from "../../components/FindRemoteJob";
 import Sponsor from "../../components/Sponsor";
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
       <div>
          I am home page.
          <Sponsor></Sponsor>
+         <FindRemoteJob></FindRemoteJob>
       </div>
    );
 };
