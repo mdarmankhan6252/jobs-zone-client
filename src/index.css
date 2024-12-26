@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#home-banner-search-all-job-btn-overlay {
-    background: rgb(246, 247, 249);
-    background: radial-gradient(circle, rgba(246, 247, 249, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  }
-  
+#home-banner-right-overlay {
+  background: rgb(246, 247, 249);
+  background: radial-gradient(circle, rgba(246, 247, 249, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}

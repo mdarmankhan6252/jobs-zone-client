@@ -47,7 +47,7 @@ const Banner = () => {
 
           {/* button on hover */}
           <div
-            id="home-banner-search-all-job-btn-overlay"
+            id="home-banner-right-overlay"
             className="absolute size-full top-0 hidden xl:flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500"
           >
             <a
