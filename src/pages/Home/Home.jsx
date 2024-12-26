@@ -1,5 +1,5 @@
-import FindRemoteJob from "../../components/FindRemoteJob";
-import Sponsor from "../../components/Sponsor";
+import FindRemoteJob from "./FindRemoteJob";
+import Sponsor from "./Sponsor";
 
 const Home = () => {
    return (
