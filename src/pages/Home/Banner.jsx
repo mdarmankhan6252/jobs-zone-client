@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import bannerHorizontalMd from "../../assets/images/home-banner-horizontal-md.png";
 import bannerHorizontalSm from "../../assets/images/home-banner-horizontal-sm.png";
 import bannerVertical from "../../assets/images/home-banner-vertical.png";
-import "./HomeBanner.css";
 
-const HomeBanner = () => {
+const Banner = () => {
   return (
     <section className="flex flex-col-reverse xl:flex-row justify-between px-4 sm:px-8 xl:px-0">
       <div className="md:max-w-3xl pb-12 md:pb-24 xl:pb-[7.5rem] xl:pt-[8.5rem]">
@@ -48,7 +47,7 @@ const HomeBanner = () => {
 
           {/* button on hover */}
           <div
-            id="search-all-job-overlay"
+            id="home-banner-search-all-job-btn-overlay"
             className="absolute size-full top-0 hidden xl:flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500"
           >
             <a
@@ -65,4 +64,4 @@ const HomeBanner = () => {
   );
 };
 
-export default HomeBanner;
+export default Banner;
