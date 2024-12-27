@@ -1,5 +1,6 @@
 import FindRemoteJob from "./FindRemoteJob";
 import ForEmployers from "./ForEmployers";
+import GoDeeper from "./GoDeeper";
 import Sponsor from "./Sponsor";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
          <FindRemoteJob></FindRemoteJob>
 
          <ForEmployers></ForEmployers>
+         <GoDeeper></GoDeeper>
       </div>
    );
 };
