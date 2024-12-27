@@ -38,14 +38,14 @@ const Nav = () => {
 
    return (
       <nav className={`fixed top-0 left-0 right-0  shadow-sm z-50 bg-purple-100/80 backdrop-blur-3xl transition-transform duration-500 ease-in-out ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
-         <div className='flex items-center justify-between py-4 max-w-7xl mx-auto px-3'>
+         <div className='flex items-center justify-between py-2 max-w-7xl mx-auto px-3'>
             <Link to='/'>
                <img src={logo} alt="" className='w-14' />
             </Link>
             <ul className='font-semibold text-gray-600 space-x-6 nav items-center hidden md:flex'>
                <NavLink to='/'>Home</NavLink>
                <NavLink to='/about'>About</NavLink>
-               <NavLink to='/cars'>Cars</NavLink>
+               <NavLink to='/jobs'>Jobs</NavLink>
                {user && <NavLink to='/dashboard/statistics'>Dashboard</NavLink>}
 
 
@@ -68,7 +68,7 @@ const Nav = () => {
             <ul className={`font-semibold text-gray-600 nav  absolute flex flex-col items-start bg-white w-[250px] h-screen top-0 right-0 py-5 pl-10 pr-2 space-y-5 md:hidden duration-500  ${menu ? 'mr-0' : '-mr-72'}`}>
                <NavLink to='/'>Home</NavLink>
                <NavLink to='/about'>About</NavLink>
-               <NavLink to='/cars'>Cars</NavLink>
+               <NavLink to='/jobs'>Jobs</NavLink>
                <NavLink to='/dashboard/statistics'>Dashboard</NavLink>
                <NavLink to='login'>Login</NavLink>
 
