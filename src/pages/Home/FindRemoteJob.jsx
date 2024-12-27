@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FindRemoteJob = () => {
   return (
     <div className="bg-gray-50">
-      <div className=" max-w-7xl mx-auto px-4 py-16   md:py-24 ">
+      <div className=" max-w-7xl mx-auto px-4 py-16   md:py-24 md:px-8 ">
         <div className="flex items-center space-x-3">
           <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
           <p className="text-[16px]">Find a remote job</p><span className="hover:translate-x-5 duration-500 hover:transition-transform"><FaArrowRightLong size={20}></FaArrowRightLong> </span>
