@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { CiBookmarkCheck, CiMenuBurger } from "react-icons/ci";
+import {  CiMenuBurger } from "react-icons/ci";
 import logo from '../assets/logo.png'
 import { useEffect, useState } from 'react';
 
