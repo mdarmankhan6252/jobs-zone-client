@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const FindRemoteJob = () => {
+    const jobs = [0, 1, 2, 3, 4, 5]
   return (
     <div className="bg-gray-50">
       <div className=" max-w-7xl mx-auto px-4 py-16   md:py-24 md:px-8 ">
@@ -22,78 +23,21 @@ const FindRemoteJob = () => {
         </div>
         {/* Card section */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-8">
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
+            {
+                jobs.map((job, i) =><Link key={i} to={'/'}>
+                    <div className="hover:shadow-[0px_0px_7px_0px] hover:shadow-gray-400 duration-300 p-8 border border-gray-300 rounded-xl">
+                        <div className="flex justify-between items-center">
+                            <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
+                            <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
+                        </div>
+                        <div>
+                            <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
+                            <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
+                        </div>
                     </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
-                    </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
-                    </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
-                    </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
-                    </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
-            <Link to={'/'}>
-                <div className="hover:shadow-xl p-8 border-2 border-gray-300 rounded-xl">
-                    <div className="flex justify-between items-center">
-                        <span className="bg-[#DBEAFE] text-green-600 p-3 rounded-full"><BsBox size={25} ></BsBox></span>
-                        <img src="https://i.ibb.co.com/2yNgPDZ/find-Remote-Job.png" alt="photo" />
-                    </div>
-                    <div>
-                        <h2 className="text-lg md:text-xl font-medium mb-2 mt-4 text-gray-900">Remote developer jobs</h2>
-                        <p className="text-[16px] text-gray-600 line-clamp-2 ">Explore remote jobs at companies like Imprint, Kojo and PermitFlow </p>
-                    </div>
-                </div>
-            </Link>
+                </Link>)
+            }
+            
         </div>
       </div>
     </div>
