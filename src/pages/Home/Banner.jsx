@@ -6,7 +6,7 @@ import bannerVertical from "../../assets/images/home-banner-vertical.png";
 
 const Banner = () => {
   return (
-    <section className="flex flex-col-reverse xl:flex-row justify-between px-4 sm:px-8 xl:px-0">
+    <section className="flex flex-col-reverse xl:flex-row justify-between sm:px-8 xl:px-0 max-w-7xl mx-auto px-3 my-12">
       <div className="md:max-w-3xl pb-12 md:pb-24 xl:pb-[7.5rem] xl:pt-[8.5rem]">
         <h1 className="mb-3 text-balance text-3xl font-medium md:mb-4 md:text-[3rem] md:leading-[3.75rem] tracking-[-0.06rem]">
           The best remote job board and AI job search tools
