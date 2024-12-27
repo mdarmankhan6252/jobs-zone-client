@@ -1,12 +1,13 @@
 import mozila365 from "../../assets/images/mozila365.png";
 import nethermide from "../../assets/images/nethermide.png";
 import resturent from "../../assets/images/resturent.png";
+import RemoteCompaniesCard from "./RemoteCopaniesCard";
 
 const RemoteCompanies = () => {
   return (
-    <div className="p-10">
+    <div>
       {/* Top Section */}
-      <div className="flex flex-wrap items-center gap-4 space-y-6">
+      <div className="flex flex-wrap items-center gap-4 py-10 space-y-6">
         {/* Company Logos */}
         <div className="flex items-center -space-x-3">
           <img
@@ -26,10 +27,12 @@ const RemoteCompanies = () => {
           />
         </div>
         {/* Company Info */}
-        <p className="text-sm font-medium text-gray-700">
-          3,813 remote companies
-        </p>
-        <span className="text-lg text-gray-500">→</span>
+        <div className="flex items-center justify-center">
+          <p className="-mt-6 text-sm font-medium text-gray-700 ">
+            3,813 remote companies
+          </p>
+          <span className="-mt-6 text-lg text-gray-500">→</span>
+        </div>
       </div>
 
       {/* Content Section */}
@@ -49,7 +52,7 @@ const RemoteCompanies = () => {
           View all companies
         </button>
       </div>
-      <RemoteCompanies />
+      <RemoteCompaniesCard />
     </div>
   );
 };

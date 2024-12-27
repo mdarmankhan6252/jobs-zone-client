@@ -1,8 +1,10 @@
+import benifits from "../../assets/images/benifits.png";
 import nethermide from "../../assets/images/nethermide.png";
+import tech from "../../assets/images/tech.png";
 
 const RemoteCompaniesCard = () => {
   return (
-    <div className="p-4">
+    <div className="py-10">
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md">
         {/* Top section with logo and button */}
         <div className="flex items-center justify-between p-4 border-b border-gray-300">
@@ -20,12 +22,18 @@ const RemoteCompaniesCard = () => {
         <div className="px-4 py-2">
           <h2 className="text-xl font-bold text-gray-800">Nethermind</h2>
           <div className="flex justify-between mt-2 text-blue-600">
-            <a href="#" className="text-sm hover:underline">
-              Benefits
-            </a>
-            <a href="#" className="text-sm hover:underline">
-              Tech stack
-            </a>
+            <span className="flex items-center justify-between gap-2">
+              <img className="w-5 h-5" src={benifits} alt="" />
+              <a href="#" className="text-sm hover:underline">
+                Benefits
+              </a>
+            </span>
+            <span className="flex items-center justify-between gap-2">
+              <img className="w-5 h-5" src={tech} alt="" />
+              <a href="#" className="text-sm hover:underline">
+                Tech stack
+              </a>
+            </span>
           </div>
         </div>
 
@@ -35,12 +43,14 @@ const RemoteCompaniesCard = () => {
         </p>
 
         {/* Tags */}
-        <div className="flex gap-2 px-4 py-2">
-          <span className="px-3 py-1 text-xs text-purple-800 bg-purple-100 rounded-full">
-            Blockchain
+        <div className="flex items-center justify-between gap-2 px-4 py-2">
+          <span className="flex items-center justify-center gap-1 px-3 py-1 text-xs text-purple-800 bg-purple-100 rounded-full">
+            <span className="w-2 h-2 bg-purple-700 rounded-full "></span>
+            <span className="">Blockchain</span>
           </span>
-          <span className="px-3 py-1 text-xs text-purple-800 bg-purple-100 rounded-full">
-            Ethereum
+          <span className="flex items-center justify-center gap-1 px-3 py-1 text-xs text-purple-800 bg-purple-100 rounded-full">
+            <span className="w-2 h-2 bg-purple-700 rounded-full "></span>
+            <span className="">Ethereum</span>
           </span>
         </div>
       </div>
