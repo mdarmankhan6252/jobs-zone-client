@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#home-banner-right-overlay {
+  background: rgb(246, 247, 249);
+  background: radial-gradient(circle, rgba(246, 247, 249, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}

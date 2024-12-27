@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        euclid: ["__euclid_9a30be", "__euclid_Fallback_9a30be"],
+      },
+    },
   },
   plugins: [],
 }

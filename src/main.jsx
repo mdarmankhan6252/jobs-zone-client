@@ -10,6 +10,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import "./assets/fonts/fonts.css";
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')).render(

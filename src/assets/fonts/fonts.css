@@ -1,0 +1,36 @@
+/* font face for font weight 400 */
+
+@font-face {
+  font-family: __euclid_9a30be;
+  src: url(./aa128c88e5277f24-s.p.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* font face for font weight 500 */
+
+@font-face {
+  font-family: __euclid_9a30be;
+  src: url(./c34cadd8a503ef5e-s.p.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font face for backup */
+
+@font-face {
+  font-family: __euclid_Fallback_9a30be;
+  src: local("Arial");
+  ascent-override: 93.26%;
+  descent-override: 24.99%;
+  line-gap-override: 0%;
+  size-adjust: 107.23%;
+}
+
+/* implement font face in body */
+
+body {
+  font-family: __euclid_9a30be, __euclid_Fallback_9a30be;
+}

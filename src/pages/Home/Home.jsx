@@ -1,17 +1,15 @@
-import FindRemoteJob from "./FindRemoteJob";
-import ForEmployers from "./ForEmployers";
-import Sponsor from "./Sponsor";
+import FindRemoteJob from "../../components/FindRemoteJob";
+import Sponsor from "../../components/Sponsor";
+import Banner from "./Banner";
 
 const Home = () => {
-   return (
-      <div>
-         I am home page.
-         <Sponsor></Sponsor>
-         <FindRemoteJob></FindRemoteJob>
-
-         <ForEmployers></ForEmployers>
-      </div>
-   );
+  return (
+    <div>
+      <Banner></Banner>
+      <Sponsor></Sponsor>
+      <FindRemoteJob></FindRemoteJob>
+    </div>
+  );
 };
 
 export default Home;
