@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const GoDeeper = () => {
   return (
-    <div className=" max-w-7xl mx-auto px-4 py-16  md:pt-24 md:px-8 ">
+    <div className=" max-w-7xl mx-auto px-4 py-16  md:py-24 md:px-8 ">
       <div className="mb-12 md:mb-16 xl:flex xl:justify-between xl:items-center gap-12">
         <div className="md:max-w-3xl">
           <h1 className="mb-3 md:mb-4 text-2xl md:text-3xl font-medium">
