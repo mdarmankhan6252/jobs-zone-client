@@ -1,4 +1,7 @@
+
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import JobBoard from "./JobBoard";
+
 
 const TalentProfile = () => {
   return (
@@ -193,6 +196,9 @@ const TalentProfile = () => {
           </a>
         </div>
       </div>
+      {/*  */}
+      <JobBoard></JobBoard>
+      
     </div>
   );
 };
