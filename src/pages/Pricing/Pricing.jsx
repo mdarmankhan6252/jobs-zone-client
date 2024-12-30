@@ -1,3 +1,4 @@
+import Faqs from "./Faqs";
 import PricingHeader from "./PricingHeader";
 import TalentProfile from "./TalentProfile";
 
@@ -7,6 +8,7 @@ const Pricing = () => {
         <div>
             <PricingHeader></PricingHeader>
             <TalentProfile></TalentProfile>
+            <Faqs></Faqs>
         </div>
     );
 };
