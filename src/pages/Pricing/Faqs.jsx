@@ -19,9 +19,8 @@ const Faqs = () => {
               How do I get started hiring on Himalayas?
             </h3>
             <p className="text-gray-600">
-              Getting started on Himalayas is easy. Just
-              <a className="font-medium text-primary-700" href="/">
-                find your company
+              Getting started on Himalayas is easy. Just <a className="font-medium text-violet-700" href="/">
+                 find your company
               </a>
               in our database, or create a new one. Once you have a company
               profile, you'll be able to post jobs and manage your company
@@ -44,9 +43,8 @@ const Faqs = () => {
               How do I get access to my team's Himalayas company profile?
             </h3>
             <p className="text-gray-600">
-              Now that you've signed up, you can
-              <a className="font-medium text-primary-700" href="/">
-                find your company
+              Now that you've signed up, you can <a className="font-medium text-violet-700" href="/">
+                 find your company
               </a>
               in our database. You'll be able to get access by authenticating
               with your work email. Email us if you have any issues!
@@ -85,10 +83,7 @@ const Faqs = () => {
             <h3 className="mb-2 text-lg font-medium text-gray-900">
               Do you really donate 10% of what I pay to CO₂ removal?
             </h3>
-            <p className="text-gray-600">
-              We do! We use
-              <a className="font-medium text-primary-700" href="/">
-                Stripe Climate
+            <p className="text-gray-600">We do! We use <a className="font-medium text-violet-700" href="/">Stripe Climate
               </a>
               to direct 10% of our revenue to help scale emerging carbon removal
               technologies. As early technologies, carbon removal is expensive,
