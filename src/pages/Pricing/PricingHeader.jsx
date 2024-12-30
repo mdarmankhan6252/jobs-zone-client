@@ -1,6 +1,6 @@
 const PricingHeader = () => {
   return (
-    <div className="bg-gray-50 pb-8 md:pb-12">
+    <div className="bg-gray-50 pb-8 py-10 md:py-16">
       <div className="max-w-7xl mx-auto px-4 py-16 md:px-8 md:pb-24 md:pt-20">
         <p className="mb-2 text-center font-medium text-violet-700">
           Simple, transparent pricing
