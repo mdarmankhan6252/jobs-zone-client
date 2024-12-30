@@ -86,7 +86,7 @@ export default Nav;
 {/* <NavLink to='/'>Home</NavLink>
                <NavLink to='/'>About</NavLink>
                <NavLink to='/'>Jobs</NavLink>
-               <NavLink to='/'>Home</NavLink>
+               <NavLink to='/pricing'>Pricing</NavLink>
                <NavLink to='/'>Blog</NavLink>
                <NavLink to='/'>Contact Us</NavLink>
                <NavLink to='/'>Sign In</NavLink>

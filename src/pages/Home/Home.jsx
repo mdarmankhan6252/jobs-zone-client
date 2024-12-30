@@ -1,6 +1,10 @@
 
 import Banner from "./Banner";
 import FindRemoteJob from "./FindRemoteJob";
+import DreemJob from "./DreemJob";
+import ForEmployers from "./ForEmployers";
+import GoDeeper from "./GoDeeper";
+import OurPledge from "./OurPledge";
 import Sponsor from "./Sponsor";
 
 const Home = () => {
@@ -9,7 +13,10 @@ const Home = () => {
       <Banner></Banner>
       <Sponsor></Sponsor>
       <FindRemoteJob />
-
+      <ForEmployers></ForEmployers>
+      <GoDeeper></GoDeeper>
+      <DreemJob></DreemJob>
+      <OurPledge></OurPledge>
     </div>
   );
 };

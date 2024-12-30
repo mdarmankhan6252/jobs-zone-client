@@ -26,9 +26,9 @@ const ForEmployers = () => {
           </div>
         </div>
         {/* Card section */}
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 snap-normal overflow-x-auto bg-gray-50 pb-16 sm:px-4 md:-mx-8 md:flex md:px-8 md:pb-24 xl:place-content-center md:gap-8">
+        <div className=" grid grid-cols-1 gap-6 no-scrollbar overflow-x-auto bg-gray-50 pb-16 sm:px-4 md:-mx-8 md:flex md:px-8 md:pb-24 xl:place-content-center md:gap-8">
           <Link to={"/"}>
-            <div className="shadow-xl bg-white border border-gray-200 rounded-xl p-5 transition-all ease-in-out md:p-6 md:hover:shadow-lg cursor-pointer overflow-hidden px-6 py-8 md:w-96 md:flex-shrink-0 md:px-8 md:py-8">
+            <div className="shadow-xl bg-white border border-gray-200 rounded-xl p-5 transition-all ease-in-out md:p-6 md:hover:shadow-lg cursor-pointer  px-6 overflow-hidden py-8 md:w-96 md:flex-shrink-0 md:px-8 md:py-8">
               <div className="relative -mx-6 -mt-8 md:-mx-8 bg-[url('https://cdn-images.himalayas.app/gradient-bg-01.jpg')]">
                 <div className="absolute inset-0 bg-feature-card-gradient"></div>
                 <img
