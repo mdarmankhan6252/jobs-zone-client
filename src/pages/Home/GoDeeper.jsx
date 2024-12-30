@@ -24,14 +24,12 @@ const GoDeeper = () => {
         {/* card 1 */}
         <div className="transform transition ease-in hover:-translate-y-1">
           <Link to={"/"} className=" ">
-            <a href="/">
-              <div className="relative mb-5  h-[232px] md:mb-6 md:h-[232px]">
-                <img
-                  className="w-full h-full object-cover absolute"
-                  src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                ></img>
-              </div>
-            </a>
+            <div className="relative mb-5  h-[232px] md:mb-6 md:h-[232px]">
+              <img
+                className="w-full h-full object-cover absolute"
+                src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
+              ></img>
+            </div>
           </Link>
           <Link to={"/"}>
             <h2 className="text-[14px] block  font-medium mb-1  text-[#6b46c1]">
@@ -47,7 +45,7 @@ const GoDeeper = () => {
               resume builders.
             </p>
           </div>
-          <a className="flex items-center" href="/">
+          <Link className="flex items-center">
             <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
               <img
                 alt="Himalayas"
@@ -66,19 +64,17 @@ const GoDeeper = () => {
                 2024/12/06
               </time>
             </div>
-          </a>
+          </Link>
         </div>
         {/* card 2 */}
         <div className="transform transition ease-in hover:-translate-y-1">
           <Link to={"/"} className=" ">
-            <a href="/">
-              <div className="relative mb-5  h-[232px] md:mb-6 md:h-[232px]">
-                <img
-                  className="w-full h-full object-cover absolute"
-                  src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                ></img>
-              </div>
-            </a>
+            <div className="relative mb-5  h-[232px] md:mb-6 md:h-[232px]">
+              <img
+                className="w-full h-full object-cover absolute"
+                src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
+              ></img>
+            </div>
           </Link>
           <Link to={"/"}>
             <h2 className="text-[14px] block  font-medium mb-1  text-[#6b46c1]">
@@ -95,7 +91,7 @@ const GoDeeper = () => {
               sample answers
             </p>
           </div>
-          <a className="flex items-center" href="/">
+          <Link to='/' className="flex items-center" >
             <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
               <img
                 alt="Himalayas"
@@ -114,19 +110,17 @@ const GoDeeper = () => {
                 2024/12/06
               </time>
             </div>
-          </a>
+          </Link>
         </div>
         {/* card 3 */}
         <div className="transform transition ease-in hover:-translate-y-1">
-          <Link to={"/"} className=" ">
-            <a href="/">
-              <div className="relative mb-5 h-[232px] md:mb-6 md:h-[232px]">
-                <img
-                  className="w-full h-full object-cover absolute"
-                  src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
-                ></img>
-              </div>
-            </a>
+          <Link to='/' className=" ">
+            <div className="relative mb-5 h-[232px] md:mb-6 md:h-[232px]">
+              <img
+                className="w-full h-full object-cover absolute"
+                src="https://images.unsplash.com/photo-1698047681432-006d2449c631?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHxyZXN1bWV8ZW58MHx8fHwxNzMzMzk2ODg5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=2000"
+              ></img>
+            </div>
           </Link>
           <Link to={"/"}>
             <h2 className="text-[14px] block  font-medium mb-1  text-[#6b46c1]">
@@ -143,7 +137,7 @@ const GoDeeper = () => {
               increase
             </p>
           </div>
-          <a className="flex items-center" href="/">
+          <Link to='/' className="flex items-center">
             <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
               <img
                 alt="Himalayas"
@@ -162,7 +156,7 @@ const GoDeeper = () => {
                 2024/12/06
               </time>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
