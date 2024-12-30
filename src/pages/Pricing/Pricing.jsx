@@ -1,4 +1,5 @@
 import Faqs from "./Faqs";
+import HiringRemotely from "./HiringRemotely";
 import PricingHeader from "./PricingHeader";
 import TalentProfile from "./TalentProfile";
 
@@ -9,6 +10,7 @@ const Pricing = () => {
             <PricingHeader></PricingHeader>
             <TalentProfile></TalentProfile>
             <Faqs></Faqs>
+            <HiringRemotely></HiringRemotely>
         </div>
     );
 };
