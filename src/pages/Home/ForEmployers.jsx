@@ -25,6 +25,7 @@ const ForEmployers = () => {
             </button>
           </div>
         </div>
+
         {/* Card section */}
         <div className=" grid grid-cols-1 gap-6 no-scrollbar bg-gray-50 pb-16 sm:px-4 md:-mx-8 md:flex md:px-8 md:pb-24 xl:place-content-center md:gap-8">
           <Link to={"/"}>
@@ -43,17 +44,16 @@ const ForEmployers = () => {
                   Create a free company profile
                 </h2>
               </div>
-              <p className="text-[16px] text-gray-600 mb-8 ">
+              <p className="text-[16px] text-gray-600 mb-8 in">
                 Use your company profile to tell your story, build up your
                 remote brand, and recruit the best. Job seekers come to us to
                 research and discover remote companies.
               </p>
-              <a
+              <span 
                 className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
-                href="/"
               >
                 Create a company profile
-              </a>
+              </span>
             </div>
           </Link>
           <Link to={"/"}>
@@ -77,12 +77,11 @@ const ForEmployers = () => {
                 of the most relevant candidates. Promote your jobs to the
                 world's best remote talent.
               </p>
-              <a
+              <span
                 className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
-                href="/"
               >
                 Post a job
-              </a>
+              </span>
             </div>
           </Link>
           <Link to={"/"}>
@@ -106,12 +105,12 @@ const ForEmployers = () => {
                 and more. We'll help you tell your story to make sure you
                 attract the best talent.
               </p>
-              <a
+              <span
                 className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
                 href="/"
               >
                 Showcase employee brand
-              </a>
+              </span>
             </div>
           </Link>
         </div>

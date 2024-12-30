@@ -3,6 +3,8 @@ import { CiMenuBurger } from "react-icons/ci";
 import logo from '../assets/logo.png'
 import { useEffect, useState } from 'react';
 import { IoCloseOutline } from "react-icons/io5";
+import { PiSignOutFill } from 'react-icons/pi';
+import useAuth from '../hooks/useAuth';
 
 
 const Nav = () => {
@@ -10,6 +12,7 @@ const Nav = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
   const [showNav, setShowNav] = useState(true)
   const [menu, setMenu] = useState(false)
+  const { user, logOut } = useAuth();
 
 
 
@@ -52,10 +55,13 @@ const Nav = () => {
         <div className='flex items-center space-x-4'>
           <div className='flex items-center space-x-6 cursor-pointer'>
 
-            <Link to='/profile'><img src="https://i.ibb.co.com/m4xS62K/pexels-anntarazevich-5234256.jpg" referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover' /></Link>
+            {user && <Link to='/profile'><img src={user?.photoURL} referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover' /></Link>}
 
           </div>
-          <Link className='font-semibold border-2 py-1.5 px-4 rounded-md border-purple-600 hover:bg-purple-600 text-sm hover:text-white duration-200 text-purple-600 hidden md:inline-block' to='/login'>Login</Link>
+          {
+            user ? <PiSignOutFill onClick={() => logOut()} className='text-3xl hover:text-red-600 cursor-pointer hidden md:inline-block' /> : <Link className='font-semibold border-2 py-1.5 px-4 rounded-md border-purple-600 hover:bg-purple-600 text-sm hover:text-white duration-200 text-purple-600 hidden md:inline-block' to='/login'>Login</Link>
+          }
+
           <div onClick={() => setMenu(true)} className='text-2xl md:hidden cursor-pointer'>
             <CiMenuBurger className='' />
           </div>
@@ -70,8 +76,16 @@ const Nav = () => {
           <NavLink to='/pricing'>Pricing</NavLink>
           <NavLink to='/blogs'>Blog</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>
-          <NavLink to='/contact-us'>Login</NavLink>
-          <IoCloseOutline onClick={() => setMenu(false)} className='absolute right-2 top-0 text-3xl cursor-pointer'/>
+          {
+            user ? <li className='flex  items-center space-x-2 hover:text-red-500'>
+              <span>Sign Out</span>
+              <PiSignOutFill onClick={() => logOut()} className='text-2xl cursor-pointer' />
+            </li> : <NavLink to='/contact-us'>Login</NavLink>
+          }
+
+
+
+          <IoCloseOutline onClick={() => setMenu(false)} className='absolute right-2 top-0 text-3xl cursor-pointer' />
         </ul>
 
       </div>
