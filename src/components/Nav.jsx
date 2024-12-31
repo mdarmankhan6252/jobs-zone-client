@@ -61,15 +61,12 @@ const Nav = () => {
 
         <div className='flex items-center space-x-2'>
 
-          {user && <img src="https://i.ibb.co.com/Z8skkbT/small1.jpg" referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover md:hidden' />}
+          {user && <img src={user?.photoURL} referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover md:hidden' />}
 
 
           <div>
             {user && <img onClick={handleCard} src={user?.photoURL} referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover hidden md:inline-block cursor-pointer' />}
           </div>
-
-
-
 
           {
             !user && <Link className='font-semibold border-2 py-1.5 px-4 rounded-md border-purple-600 hover:bg-purple-600 text-sm hover:text-white duration-200 text-purple-600 hidden md:inline-block' to='/login'>Login</Link>
@@ -98,9 +95,6 @@ const Nav = () => {
             </li>
 
           </> : <NavLink to='/contact-us'>Login</NavLink>}
-          
-
-
 
           <IoCloseOutline onClick={() => setMenu(false)} className='absolute right-2 top-0 text-3xl cursor-pointer' />
         </ul>
