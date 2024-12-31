@@ -22,8 +22,8 @@ const AboutHeader = () => {
       <div className="max-w-7xl mx-auto px-4 pt-16 md:px-8 md:pt-20">
         <div>
           <div className="flex flex-col gap-x-6 md:flex-row">
-            <span className="relative inline-block h-16 w-16 mb-5 md:mb-0 md:h-20 md:w-20">
-              <img alt="Jobs Zone" className="absolute h-full w-full rounded-full bg-white border-2 border-white shadow-sm md:border-4" src={logo} />
+            <span className="inline-block h-16 w-16 mb-5 md:mb-0 md:h-20 md:w-20">
+              <img alt="Jobs Zone Logo" className="h-full w-full rounded-full bg-white border-2 border-white shadow-sm md:border-4" src={logo} />
             </span>
             <div className="flex flex-1 flex-col">
               <div className="mb-3 flex items-center md:mb-5">
