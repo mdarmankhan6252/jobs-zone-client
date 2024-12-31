@@ -17,7 +17,7 @@ const ResumeBuilders = () => {
           Advice for remote workers and empolyees
         </p>
         {/*  ***** */}
-        <div className="xl:grid xl:grid-cols-2 xl:gap-x-8">
+        <div className="flex flex-col xl:flex-row-reverse xl:gap-x-8">
           <Link
             to={"/"}
             className="relative mb-8  h-[232px] md:h-[360px] xl:mb-0"
@@ -27,7 +27,7 @@ const ResumeBuilders = () => {
               alt="photo"
             />
           </Link>      
-          <div className="order-first">
+          <div className="">
             <Link to={"/"} className="mb-2 block font-medium text-violet-700">
               Resume & Cover Letters
             </Link>
