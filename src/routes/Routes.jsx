@@ -4,6 +4,7 @@ import Root from "../layouts/Root";
 import Pricing from "../pages/Pricing/Pricing";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
+import Blogs from "../pages/Blogs/Blogs";
 
 export const router = createBrowserRouter([
    {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
          {
             path: '/register',
             element: <Register />
+         },
+         {
+            path: '/blogs',
+            element: <Blogs />
          }
       ]
    },
