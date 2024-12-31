@@ -13,6 +13,7 @@ const Nav = () => {
   const [showNav, setShowNav] = useState(true)
   const [menu, setMenu] = useState(false)
   const { user, logOut } = useAuth();
+  const [card, setCard] = useState(false)
 
 
 
@@ -37,13 +38,19 @@ const Nav = () => {
   }, [scrollPosition])
 
 
+  const handleCard = () => {
+    setCard(!card)
+  }
+
+
+
   return (
     <nav className={`fixed top-0 left-0 right-0  shadow-sm z-50 bg-gray-100/80 backdrop-blur-3xl transition-transform duration-500 ease-in-out ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className='flex items-center justify-between py-2 max-w-7xl mx-auto px-3'>
+      <div className='flex items-center justify-between py-2 max-w-7xl mx-auto px-3 relative'>
         <Link to='/'>
           <img src={logo} alt="" className='w-14' />
         </Link>
-        <ul className='font-semibold text-gray-500 space-x-6 text-[15px] nav items-center hidden md:flex'>
+        <ul className='text-gray-600 space-x-6 text-[15px] nav items-center hidden md:flex'>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/jobs'>Jobs</NavLink>
@@ -52,14 +59,20 @@ const Nav = () => {
           <NavLink to='/contact-us'>Contact Us</NavLink>
         </ul>
 
-        <div className='flex items-center space-x-4'>
-          <div className='flex items-center space-x-6 cursor-pointer'>
+        <div className='flex items-center space-x-2'>
 
-            {user && <Link to='/profile'><img src={user?.photoURL} referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover' /></Link>}
+          {user && <img src="https://i.ibb.co.com/Z8skkbT/small1.jpg" referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover md:hidden' />}
 
+
+          <div>
+            {user && <img onClick={handleCard} src={user?.photoURL} referrerPolicy="no-referrer" className='w-10 h-10 rounded-full object-cover hidden md:inline-block cursor-pointer' />}
           </div>
+
+
+
+
           {
-            user ? <PiSignOutFill onClick={() => logOut()} className='text-3xl hover:text-red-600 cursor-pointer hidden md:inline-block' /> : <Link className='font-semibold border-2 py-1.5 px-4 rounded-md border-purple-600 hover:bg-purple-600 text-sm hover:text-white duration-200 text-purple-600 hidden md:inline-block' to='/login'>Login</Link>
+            !user && <Link className='font-semibold border-2 py-1.5 px-4 rounded-md border-purple-600 hover:bg-purple-600 text-sm hover:text-white duration-200 text-purple-600 hidden md:inline-block' to='/login'>Login</Link>
           }
 
           <div onClick={() => setMenu(true)} className='text-2xl md:hidden cursor-pointer'>
@@ -69,24 +82,39 @@ const Nav = () => {
 
         {/* side menu */}
 
-        <ul className={`font-semibold text-gray-600 nav  absolute flex flex-col items-start bg-white w-[250px] h-screen top-0 right-0 py-5 pl-10 pr-2 space-y-5 md:hidden duration-500  ${menu ? 'mr-0' : '-mr-72'}`}>
+        <ul className={` text-gray-600 nav  absolute flex flex-col items-start border-l border-gray-100 bg-white w-[250px] h-screen top-0 right-0 py-5 pl-10 pr-2 space-y-5 md:hidden duration-500  ${menu ? 'mr-0' : '-mr-72'}`}>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/about'>About</NavLink>
           <NavLink to='/jobs'>Jobs</NavLink>
           <NavLink to='/pricing'>Pricing</NavLink>
           <NavLink to='/blogs'>Blog</NavLink>
           <NavLink to='/contact-us'>Contact Us</NavLink>
-          {
-            user ? <li className='flex  items-center space-x-2 hover:text-red-500'>
+          {user ? <>
+            <Link to='/profile'>Profile</Link>
+            <Link to='/dashboard'>Dashboard</Link>
+            <li onClick={() => logOut()} className='flex  items-center space-x-2 hover:text-red-500 cursor-pointer'>
               <span>Sign Out</span>
-              <PiSignOutFill onClick={() => logOut()} className='text-2xl cursor-pointer' />
-            </li> : <NavLink to='/contact-us'>Login</NavLink>
-          }
+              <PiSignOutFill className='text-2xl ' />
+            </li>
+
+          </> : <NavLink to='/contact-us'>Login</NavLink>}
+          
 
 
 
           <IoCloseOutline onClick={() => setMenu(false)} className='absolute right-2 top-0 text-3xl cursor-pointer' />
         </ul>
+
+        {/* admin and profile after md screen */}
+
+        <div className={`text-gray-600 flex-col absolute right-10 top-[54px] bg-white hidden sm:flex p-6 duration-500 transform origin-top-right border *:py-2 *:border-b hover:*:bg-gray-50 ${!user && 'scale-0'}  rounded-lg ${card ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
+          <Link to='/profile'>Profile</Link>
+          <Link to='/dashboard'>Dashboard</Link>
+          <li onClick={() => logOut()} className='flex  items-center space-x-2 hover:text-red-500 cursor-pointer'>
+            <span>Sign Out</span>
+            <PiSignOutFill className='text-2xl' />
+          </li>
+        </div>
 
       </div>
     </nav>
