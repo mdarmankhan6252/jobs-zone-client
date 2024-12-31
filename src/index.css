@@ -18,3 +18,11 @@
   border-bottom: 2px solid #8E24AA;
 }
 
+/* Blogs */
+.blog-baground{
+    background-image: linear-gradient(180deg,#fcfcfd,#f6f7f9)
+};
+
+.new-style {
+    position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;
+}

@@ -8,7 +8,7 @@ const Footer = () => {
         {" "}
         <img
           className="mb-8 h-6 md:h-8"
-          src="https://i.ibb.co.com/C9d23Nw/Himalayas.png"
+          src="https://i.ibb.co.com/NNJ70DH/Jobszone-Logo.png"
           alt=""
         />{" "}
         <span className="sr-only">Himalayas logo</span>{" "}
