@@ -1,8 +1,9 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import logo from "../../assets/logo.png";
 
-const AboutHeader = () => {
-  const [activeTab, setActiveTab] = useState("Overview");
+const AboutHeader = ({ activeTabState }) => {
+  console.log(activeTabState);
+  const { activeTab, setActiveTab } = activeTabState;
   let headerText;
   if (activeTab === "Overview") {
     headerText = "Jobs Zone";
@@ -41,7 +42,7 @@ const AboutHeader = () => {
                 onClick={() => setActiveTab("Overview")}
                 className={
                   activeTab === "Overview"
-                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-transparent border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
+                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
                     : "border-transparent border-b-2 pb-4 text-sm font-medium text-gray-500 hover:border-[#6B46C1] hover:text-[#6B46C1] md:text-base md:pb-3.5 px-1"
                 }
               >
@@ -51,7 +52,7 @@ const AboutHeader = () => {
                 onClick={() => setActiveTab("Jobs")}
                 className={
                   activeTab === "Jobs"
-                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-transparent border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
+                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
                     : "border-transparent border-b-2 pb-4 text-sm font-medium text-gray-500 hover:border-[#6B46C1] hover:text-[#6B46C1] md:text-base md:pb-3.5 px-1"
                 }
               >
@@ -64,7 +65,7 @@ const AboutHeader = () => {
                 onClick={() => setActiveTab("Salaries")}
                 className={
                   activeTab === "Salaries"
-                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-transparent border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
+                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
                     : "border-transparent border-b-2 pb-4 text-sm font-medium text-gray-500 hover:border-[#6B46C1] hover:text-[#6B46C1] md:text-base md:pb-3.5 px-1"
                 }
               >
@@ -74,7 +75,7 @@ const AboutHeader = () => {
                 onClick={() => setActiveTab("Benefits")}
                 className={
                   activeTab === "Benefits"
-                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-transparent border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
+                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
                     : "border-transparent border-b-2 pb-4 text-sm font-medium text-gray-500 hover:border-[#6B46C1] hover:text-[#6B46C1] md:text-base md:pb-3.5 px-1"
                 }
               >
@@ -84,7 +85,7 @@ const AboutHeader = () => {
                 onClick={() => setActiveTab("Tech_Stack")}
                 className={
                   activeTab === "Tech_Stack"
-                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-transparent border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
+                    ? "border-[#6B46C1] text-[#6B46C1] duration-150 border-b-2 pb-4 text-sm font-medium md:text-base md:pb-3.5 px-1"
                     : "border-transparent border-b-2 pb-4 text-sm font-medium text-gray-500 hover:border-[#6B46C1] hover:text-[#6B46C1] md:text-base md:pb-3.5 px-1"
                 }
               >
