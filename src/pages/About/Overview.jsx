@@ -12,6 +12,17 @@ const Overview = ({ activeTabState }) => {
     // focus on the benefits tab
     activeTabState.setActiveTab("Benefits");
   };
+
+  const handleTechStackBtn = () => {
+    // scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    // focus on the tech stack tab
+    activeTabState.setActiveTab("Tech_Stack");
+  };
   return (
     <div>
       <h2 className="mb-4 text-2xl font-medium text-gray-900 md:mb-5">About Jobs Zone</h2>
@@ -301,6 +312,71 @@ const Overview = ({ activeTabState }) => {
               </svg>
             </span>
           </button>
+        </div>
+      </article>
+
+      {/* Tech stack overview */}
+      <article className="pt-8 md:pt-12">
+        <div className="border-b border-gray-200 pb-8 md:pb-12">
+          <div className="pb-8 md:flex md:gap-2 md:justify-between">
+            <div>
+              <h2 className="mb-2 text-xl font-medium text-gray-900">Tech stack</h2>
+              <p className="mb-6 text-gray-600 md:mb-0">Learn about the tools and technologies that Jobs Zone uses to build, market, and sell its products.</p>
+            </div>
+            <button
+              onClick={handleTechStackBtn}
+              className="font-medium rounded-lg transition-colors min-w-max h-max border border-transparent bg-[#6b46c1] text-white hover:bg-[#553c9a] text-base px-[1.125rem] py-2.5"
+            >
+              View tech stack
+            </button>
+          </div>
+          <div className="md:-mt-2 mb-8 grid grid-cols-2 gap-3 rounded-xl bg-gray-50 p-3 md:grid-cols-4">
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="Node.js logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/mac7pzhubfu0uuhylhvr8v40rjx2" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Node.js</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="Tailwind CSS logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/5ppsgnrgrquces08d2nezal0td49" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Tailwind CSS</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="JavaScript logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/ycjxpgfg2ujd9knqdym12jtwoadv" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">JavaScript</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="HTML5 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/e4pdsmlydq5tqn6xx1jjdlagm04g" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">HTML5</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="CSS 3 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/zj0ftcxoi81ky0fprmz29peb3doj" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">CSS 3</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="CSS 3 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/fswu1o4vgzzeh3sev4gsq3uapvv4" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">ReactJS</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img
+                alt="CSS 3 logo"
+                className="h-12 w-12 flex-grow-0 rounded-md"
+                src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png"
+              />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">ReactJS</p>
+            </Link>
+            <button
+              onClick={handleTechStackBtn}
+              className="rounded-lg border border-dashed border-gray-200 text-center text-sm font-medium text-gray-600 transition-colors hover:border-[#6b46c1] hover:bg-primary-[#FAF5FF] hover:text-[#6b46c1]"
+            >
+              See more
+            </button>
+          </div>
+          <p className="text-gray-500">
+            Jobs Zone employees can{" "}
+            <Link className="text-[#6b46c1] underline" to="/register">
+              create an account
+            </Link>{" "}
+            to update this tech stack.
+          </p>
         </div>
       </article>
     </div>
