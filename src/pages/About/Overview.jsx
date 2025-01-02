@@ -352,16 +352,16 @@ const Overview = ({ activeTabState }) => {
               <p className="line-clamp-2 text-sm font-medium text-gray-900">CSS 3</p>
             </Link>
             <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
-              <img alt="CSS 3 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/fswu1o4vgzzeh3sev4gsq3uapvv4" />
+              <img alt="ReactJS logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/fswu1o4vgzzeh3sev4gsq3uapvv4" />
               <p className="line-clamp-2 text-sm font-medium text-gray-900">ReactJS</p>
             </Link>
             <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
               <img
-                alt="CSS 3 logo"
+                alt="Firebase logo"
                 className="h-12 w-12 flex-grow-0 rounded-md"
                 src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png"
               />
-              <p className="line-clamp-2 text-sm font-medium text-gray-900">ReactJS</p>
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Firebase</p>
             </Link>
             <button
               onClick={handleTechStackBtn}
