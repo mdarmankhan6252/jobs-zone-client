@@ -7,11 +7,14 @@ import Register from "../pages/Auth/Register";
 import About from "../pages/About/About";
 import Jobs from "../pages/Jobs/Jobs";
 import Blogs from "../pages/Blogs/Blogs";
+import ErrorPage from "../ErrorPage/ErrorPage";
+import Profile from "../pages/Profile";
 
 export const router = createBrowserRouter([
    {
       path: "/",
       element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
          {
             index: true,
@@ -40,6 +43,10 @@ export const router = createBrowserRouter([
          {
             path: '/blogs',
             element: <Blogs />
+         },
+         {
+            path: '/profile',
+            element: <Profile />
          }
       ]
    },
