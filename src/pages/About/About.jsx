@@ -5,6 +5,7 @@ import ClaimProfile from "./ClaimProfile";
 import JobsTab from "./JobsTab";
 import Overview from "./Overview";
 import SalariesTab from "./SalariesTab";
+import TechStack from "./TechStack";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -18,7 +19,7 @@ const About = () => {
           {activeTab === "Jobs" && <JobsTab></JobsTab>}
           {activeTab === "Salaries" && <SalariesTab></SalariesTab>}
           {activeTab === "Benefits" && <BenefitsTab></BenefitsTab>}
-          {activeTab === "Tech_Stack" && <div>Tech Stack</div>}
+          {activeTab === "Tech_Stack" && <TechStack></TechStack>}
         </div>
         <ClaimProfile></ClaimProfile>
       </div>
