@@ -2,7 +2,6 @@
 import logo from "../../assets/logo.png";
 
 const AboutHeader = ({ activeTabState }) => {
-  console.log(activeTabState);
   const { activeTab, setActiveTab } = activeTabState;
   let headerText;
   if (activeTab === "Overview") {
