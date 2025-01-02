@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AboutHeader from "./AboutHeader";
+import BenefitsTab from "./BenefitsTab";
 import ClaimProfile from "./ClaimProfile";
 import JobsTab from "./JobsTab";
 import Overview from "./Overview";
@@ -16,7 +17,7 @@ const About = () => {
           {activeTab === "Overview" && <Overview activeTabState={activeTabState}></Overview>}
           {activeTab === "Jobs" && <JobsTab></JobsTab>}
           {activeTab === "Salaries" && <SalariesTab></SalariesTab>}
-          {activeTab === "Benefits" && <div>Benefits</div>}
+          {activeTab === "Benefits" && <BenefitsTab></BenefitsTab>}
           {activeTab === "Tech_Stack" && <div>Tech Stack</div>}
         </div>
         <ClaimProfile></ClaimProfile>
