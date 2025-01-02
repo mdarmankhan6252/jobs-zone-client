@@ -19,7 +19,7 @@ const DashboardRoute = () => {
             <span className="font-light">Statistics</span>
          </NavLink>
 
-         <NavLink to='/dashboard/addJobs' className="flex items-center space-x-2 p-2 border rounded-lg">
+         <NavLink to='/dashboard/addJob' className="flex items-center space-x-2 p-2 border rounded-lg">
             <IoIosAddCircleOutline className="text-2xl"/>
             <span className="font-light">Add Job</span>
          </NavLink>
@@ -34,12 +34,12 @@ const DashboardRoute = () => {
             <span className="font-light">Add Blogs</span>
          </NavLink>
 
-         <NavLink to='/dashboard/addJobs' className="flex items-center space-x-2 p-2 border rounded-lg">
+         <NavLink to='/dashboard/manageBlogs' className="flex items-center space-x-2 p-2 border rounded-lg">
             <MdOutlineManageAccounts className="text-2xl"/>
             <span className="font-light">Manage Blogs</span>
          </NavLink>
 
-         <NavLink to='/dashboard/addJobs' className="flex items-center space-x-2 p-2 border rounded-lg">
+         <NavLink to='/dashboard/bookings' className="flex items-center space-x-2 p-2 border rounded-lg">
             <CiBookmarkCheck className="text-2xl"/>
             <span className="font-light">Bookings</span>
          </NavLink>
