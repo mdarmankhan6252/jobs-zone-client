@@ -17,6 +17,10 @@
   color: #8E24AA;
   border-bottom: 2px solid #8E24AA;
 }
+.dashboard-nav > a.active{
+  border: 1px solid #8E24AA;
+  background-color: #fcf8fd;
+}
 
 /* Blogs */
 .blog-baground{

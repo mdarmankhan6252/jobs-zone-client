@@ -1,7 +1,14 @@
 import { useState } from "react";
+import DreemJob from "../Home/DreemJob";
+import OurPledge from "../Home/OurPledge";
 import AboutHeader from "./AboutHeader";
+import BenefitsTab from "./BenefitsTab";
 import ClaimProfile from "./ClaimProfile";
+import JobsTab from "./JobsTab";
 import Overview from "./Overview";
+import SalariesTab from "./SalariesTab";
+import TechStack from "./TechStack";
+import RemoteCompanies from "./RemoteCompanies";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -9,16 +16,19 @@ const About = () => {
   return (
     <div>
       <AboutHeader activeTabState={activeTabState}></AboutHeader>
-      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-12 md:pt-16 flex flex-col gap-16 xl:flex-row justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16 flex flex-col gap-16 xl:flex-row justify-between">
         <div className="flex-shrink-0 xl:w-[48rem]">
-          {activeTab === "Overview" && <Overview></Overview>}
-          {activeTab === "Jobs" && <div>Jobs</div>}
-          {activeTab === "Salaries" && <div>Salaries</div>}
-          {activeTab === "Benefits" && <div>Benefits</div>}
-          {activeTab === "Tech_Stack" && <div>Tech Stack</div>}
+          {activeTab === "Overview" && <Overview activeTabState={activeTabState}></Overview>}
+          {activeTab === "Jobs" && <JobsTab></JobsTab>}
+          {activeTab === "Salaries" && <SalariesTab></SalariesTab>}
+          {activeTab === "Benefits" && <BenefitsTab></BenefitsTab>}
+          {activeTab === "Tech_Stack" && <TechStack></TechStack>}
         </div>
         <ClaimProfile></ClaimProfile>
       </div>
+      <RemoteCompanies></RemoteCompanies>
+      <DreemJob></DreemJob>
+      <OurPledge></OurPledge>
     </div>
   );
 };

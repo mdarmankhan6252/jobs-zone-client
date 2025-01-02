@@ -1,10 +1,32 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-const Overview = () => {
+const Overview = ({ activeTabState }) => {
+  const handleBenefitsBtn = () => {
+    // scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    // focus on the benefits tab
+    activeTabState.setActiveTab("Benefits");
+  };
+
+  const handleTechStackBtn = () => {
+    // scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    // focus on the tech stack tab
+    activeTabState.setActiveTab("Tech_Stack");
+  };
   return (
-    <div className="border-b border-gray-200">
+    <div>
       <h2 className="mb-4 text-2xl font-medium text-gray-900 md:mb-5">About Jobs Zone</h2>
-      <article className="mb-8 md:mb-12 md:text-lg">
+      <article className="pb-8 md:pb-12 md:text-lg border-b border-gray-200">
         <p className="mb-4 md:mb-5">
           COVID-19 has caused a permanent shift towards remote work.{" "}
           <Link to="#" className="font-medium text-[#6b46c1] ">
@@ -169,6 +191,193 @@ const Overview = () => {
           </Link>{" "}
           on the Jobs Zone blog.
         </p>
+      </article>
+
+      {/* benefits overview */}
+      <article className="pt-8 md:pt-12">
+        <div className="border-b border-gray-200 pb-8 md:pb-12">
+          <div className="pb-8 md:flex md:justify-between">
+            <div>
+              <h2 className="mb-2 text-xl font-medium text-gray-900">Employee benefits</h2>
+              <p className="mb-6 text-gray-600 md:mb-0">Learn about the employee benefits and perks provided at Jobs Zone.</p>
+            </div>
+            <button
+              onClick={handleBenefitsBtn}
+              className="font-medium rounded-lg transition-colors h-max border border-transparent bg-[#6B46C1] text-white hover:bg-[#553C9A] text-base px-[1.125rem] py-[0.625rem]"
+            >
+              View benefits
+            </button>
+          </div>
+          <div className="grid grid-cols-1 md:gap-8 gap-6 pb-8 md:grid-cols-2">
+            <div className="flex flex-row gap-x-4 gap-y-3 md:flex-col">
+              <svg
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 flex-shrink-0 pt-0.5 text-[#6B46C1] md:pt-0"
+              >
+                <path
+                  d="M15.125 7.342a3.727 3.727 0 00.363-1.586 3.756 3.756 0 00-7.512 0c0 .669.188 1.288.495 1.83m-6.625 3A1.685 1.685 0 001 12.042c0 .934.758 1.692 1.692 1.692h.99m13.416-2.076h.01m2.136-5.366v2.74a6.422 6.422 0 011.745 2.556h.938c.592 0 1.073.48 1.073 1.073v3.29c0 .592-.48 1.072-1.073 1.072H20.52a6.477 6.477 0 01-2.35 2.352v1.941c0 .593-.48 1.073-1.072 1.073H14.95c-.592 0-1.073-.48-1.073-1.073v-1.073h-3.756v.931c0 .593-.48 1.074-1.073 1.074H6.902c-.592 0-1.073-.481-1.073-1.074v-2.58a6.415 6.415 0 01-2.146-4.79 6.439 6.439 0 016.439-6.44h4.857c.46 0 .907-.15 1.274-.427a3.172 3.172 0 011.918-.645h1.073z"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div>
+                <h3 className="mb-1 text-lg font-medium text-gray-900">Retirement benefits</h3>
+                <p className="text-gray-600">Regional retirement plans to help you invest in your future.</p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-x-4 gap-y-3 md:flex-col">
+              <svg
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 flex-shrink-0 pt-0.5 text-[#6B46C1] md:pt-0"
+              >
+                <path
+                  d="M12 2v9.714l-7.071 7.357m0 0c3.905 3.905 10.237 3.905 14.142 0 3.905-3.905 3.905-10.237 0-14.142-3.905-3.905-10.237-3.905-14.142 0-3.905 3.905-3.905 10.237 0 14.142zM3 7.644l9 4.067"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div>
+                <h3 className="mb-1 text-lg font-medium text-gray-900">Profit sharing</h3>
+                <p className="text-gray-600">When the company does well, all team members share the profits!</p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-x-4 gap-y-3 md:flex-col">
+              <svg
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 flex-shrink-0 pt-0.5 text-[#6B46C1] md:pt-0"
+              >
+                <path
+                  d="M6.421 21.395v-6.632c0-.61-.495-1.105-1.105-1.105h-2.21c-.61 0-1.106.495-1.106 1.105v6.632c0 .61.495 1.105 1.105 1.105h2.21c.61 0 1.106-.495 1.106-1.105zm0 0h1.667c.361 0 .72.044 1.07.132l2.93.732c.635.16 1.297.175 1.94.046l3.238-.647a4.425 4.425 0 002.26-1.21l2.29-2.29a1.673 1.673 0 00-2.188-2.524l-2.67 2.003a2.207 2.207 0 01-1.327.442h-2.578 1.64c.926 0 1.675-.75 1.675-1.675v-.334c0-.769-.522-1.438-1.267-1.624l-2.534-.633a5.2 5.2 0 00-4.138.717l-2.008 1.338m8.434-11.743a3.113 3.113 0 00-.87-1.707 3.137 3.137 0 10-1.63 5.298m5.305-2.729a3.137 3.137 0 11-4.436 4.436 3.137 3.137 0 014.436-4.436z"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div>
+                <h3 className="mb-1 text-lg font-medium text-gray-900">Equity benefits</h3>
+                <p className="text-gray-600">Every employee gets equity, so you are rewarded for your best work.</p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-x-4 gap-y-3 md:flex-col">
+              <svg
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 flex-shrink-0 pt-0.5 text-[#6B46C1] md:pt-0"
+              >
+                <path
+                  d="M15.121 4.5h.01m-3.644-.33C6.51 4.426 2.55 8.53 2.55 13.57A9.428 9.428 0 0011.978 23a9.428 9.428 0 009.429-9.429 9.374 9.374 0 00-3.119-6.988m-10.5 15.44v-.074c0-2.095 4.19-1.848 4.19-4.19 0-2.095-3.142-2.095-3.142-5.238 0-2.963-2.096-3.143-5.239-3.143h-.063M18.233 20.61a3.084 3.084 0 01-.466-.212 3.155 3.155 0 013.186-5.447c.111.065.205.147.305.222m-6.137-4.745s3.669-3.012 3.669-5.762A3.668 3.668 0 0015.121 1a3.668 3.668 0 00-3.668 3.667c0 2.75 3.668 5.762 3.668 5.762z"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <div>
+                <h3 className="mb-1 text-lg font-medium text-gray-900">Location independent salary</h3>
+                <p className="text-gray-600">No matter where you live, we’ll pay you the same salary as someone else in your role.</p>
+              </div>
+            </div>
+          </div>
+          <button onClick={handleBenefitsBtn} className="flex items-center font-medium text-gray-600">
+            View Jobs Zone&apos;s employee benefits
+            <span className style={{ transform: "translate(0px, 0px) rotate(0deg) scale(1)" }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-labelledby="ashpavr6amrnb4gytsu97xfvwos80zy8"
+                className="ml-2 h-5 w-5 stroke-current"
+              >
+                <path d="M5 12h14m0 0l-7-7m7 7l-7 7" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </article>
+
+      {/* Tech stack overview */}
+      <article className="pt-8 md:pt-12">
+        <div className="border-b border-gray-200 pb-8 md:pb-12">
+          <div className="pb-8 md:flex md:gap-2 md:justify-between">
+            <div>
+              <h2 className="mb-2 text-xl font-medium text-gray-900">Tech stack</h2>
+              <p className="mb-6 text-gray-600 md:mb-0">Learn about the tools and technologies that Jobs Zone uses to build, market, and sell its products.</p>
+            </div>
+            <button
+              onClick={handleTechStackBtn}
+              className="font-medium rounded-lg transition-colors min-w-max h-max border border-transparent bg-[#6b46c1] text-white hover:bg-[#553c9a] text-base px-[1.125rem] py-2.5"
+            >
+              View tech stack
+            </button>
+          </div>
+          <div className="md:-mt-2 mb-8 grid grid-cols-2 gap-3 rounded-xl bg-gray-50 p-3 md:grid-cols-4">
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="Node.js logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/mac7pzhubfu0uuhylhvr8v40rjx2" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Node.js</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="Tailwind CSS logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/5ppsgnrgrquces08d2nezal0td49" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Tailwind CSS</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="JavaScript logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/ycjxpgfg2ujd9knqdym12jtwoadv" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">JavaScript</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="HTML5 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/e4pdsmlydq5tqn6xx1jjdlagm04g" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">HTML5</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="CSS 3 logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/zj0ftcxoi81ky0fprmz29peb3doj" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">CSS 3</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img alt="ReactJS logo" className="h-12 w-12 flex-grow-0 rounded-md" src="https://cdn-images.himalayas.app/fswu1o4vgzzeh3sev4gsq3uapvv4" />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">ReactJS</p>
+            </Link>
+            <Link className="flex items-center gap-x-3 rounded-lg bg-white p-2" to="#">
+              <img
+                alt="Firebase logo"
+                className="h-12 w-12 flex-grow-0 rounded-md"
+                src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png"
+              />
+              <p className="line-clamp-2 text-sm font-medium text-gray-900">Firebase</p>
+            </Link>
+            <button
+              onClick={handleTechStackBtn}
+              className="rounded-lg border border-dashed border-gray-200 text-center text-sm font-medium text-gray-600 transition-colors hover:border-[#6b46c1] hover:bg-primary-[#FAF5FF] hover:text-[#6b46c1]"
+            >
+              See more
+            </button>
+          </div>
+          <p className="text-gray-500">
+            Jobs Zone employees can{" "}
+            <Link className="text-[#6b46c1] underline" to="/register">
+              create an account
+            </Link>{" "}
+            to update this tech stack.
+          </p>
+        </div>
       </article>
     </div>
   );
