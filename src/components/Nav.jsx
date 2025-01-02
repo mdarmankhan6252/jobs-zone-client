@@ -48,7 +48,7 @@ const Nav = () => {
     <nav className={`fixed top-0 left-0 right-0  shadow-sm z-50 bg-gray-100/80 backdrop-blur-3xl transition-transform duration-500 ease-in-out ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='flex items-center justify-between py-2 max-w-7xl mx-auto px-3 relative'>
         <Link to='/'>
-          <img src={logo} alt="" className='w-14' />
+          <img src={logo} alt="" className='w-40' />
         </Link>
         <ul className='text-gray-600 space-x-6 text-[15px] nav items-center hidden md:flex'>
           <NavLink to='/'>Home</NavLink>
