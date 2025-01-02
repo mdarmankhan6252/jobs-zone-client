@@ -3,6 +3,7 @@ import AboutHeader from "./AboutHeader";
 import ClaimProfile from "./ClaimProfile";
 import JobsTab from "./JobsTab";
 import Overview from "./Overview";
+import SalariesTab from "./SalariesTab";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -14,7 +15,7 @@ const About = () => {
         <div className="flex-shrink-0 xl:w-[48rem]">
           {activeTab === "Overview" && <Overview activeTabState={activeTabState}></Overview>}
           {activeTab === "Jobs" && <JobsTab></JobsTab>}
-          {activeTab === "Salaries" && <div>Salaries</div>}
+          {activeTab === "Salaries" && <SalariesTab></SalariesTab>}
           {activeTab === "Benefits" && <div>Benefits</div>}
           {activeTab === "Tech_Stack" && <div>Tech Stack</div>}
         </div>
