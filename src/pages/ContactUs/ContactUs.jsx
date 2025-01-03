@@ -1,5 +1,6 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import ContactInfo from "./ContactInfo";
 
 const ContactUs = () => {
   return (
@@ -38,6 +39,8 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+
+      <ContactInfo />
 
       <div className="mt-12">
         <MapContainer center={[24.88938953803653, 91.89110781554236]} zoom={15} className="rounded-3xl shadow" style={{ height: "25rem", width: "100%" }}>
