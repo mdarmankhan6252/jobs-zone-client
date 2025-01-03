@@ -18,6 +18,7 @@ import AddBlog from "../pages/Dashboard/AddBlog";
 import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
    {
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
          {
             path: '/profile',
             element: <Profile />
+         },
+         {
+            path: '/contact-us',
+            element: <ContactUs />
          },
          
       ]

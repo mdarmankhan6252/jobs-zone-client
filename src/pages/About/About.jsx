@@ -6,9 +6,9 @@ import BenefitsTab from "./BenefitsTab";
 import ClaimProfile from "./ClaimProfile";
 import JobsTab from "./JobsTab";
 import Overview from "./Overview";
+import RemoteCompanies from "./RemoteCompanies";
 import SalariesTab from "./SalariesTab";
 import TechStack from "./TechStack";
-import RemoteCompanies from "./RemoteCompanies";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -27,8 +27,10 @@ const About = () => {
         <ClaimProfile></ClaimProfile>
       </div>
       <RemoteCompanies></RemoteCompanies>
-      <DreemJob></DreemJob>
-      <OurPledge></OurPledge>
+      <div className="pt-16 xl:pt-24">
+        <DreemJob></DreemJob>
+        <OurPledge></OurPledge>
+      </div>
     </div>
   );
 };
