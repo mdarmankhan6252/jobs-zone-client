@@ -6,9 +6,7 @@ import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import About from "../pages/About/About";
 import Jobs from "../pages/Jobs/Jobs";
-<<<<<<< HEAD
 import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
-=======
 import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Profile from "../pages/Profile";
@@ -22,7 +20,6 @@ import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
 import ContactUs from "../pages/ContactUs/ContactUs";
->>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
 
 export const router = createBrowserRouter([
    {
@@ -59,20 +56,18 @@ export const router = createBrowserRouter([
             element: <Blogs />
          },
          {
-<<<<<<< HEAD
             path: '/blog-details',
             element: <BlogDetails></BlogDetails>
          },
-=======
+         {
             path: '/profile',
             element: <Profile />
          },
          {
             path: '/contact-us',
             element: <ContactUs />
-         },
-         
->>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
+         }
+
       ]
    },
    {
