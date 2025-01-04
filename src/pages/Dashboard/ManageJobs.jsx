@@ -2,7 +2,6 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 import { useQuery } from '@tanstack/react-query'
 import Swal from 'sweetalert2'
-import { Link } from 'react-router-dom'
 
 const ManageJobs = () => {
    const axiosPublic = useAxiosPublic();
