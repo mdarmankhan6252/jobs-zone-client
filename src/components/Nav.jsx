@@ -42,8 +42,6 @@ const Nav = () => {
     setCard(!card)
   }
 
-
-
   return (
     <nav className={`fixed top-0 left-0 right-0  shadow-sm z-[9999999] bg-gray-100/80 backdrop-blur-3xl transition-transform duration-500 ease-in-out ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className='flex items-center justify-between py-2 max-w-7xl mx-auto px-3 relative'>
@@ -104,7 +102,7 @@ const Nav = () => {
         <div className={`text-gray-600 flex-col absolute right-10 top-[54px] bg-white hidden sm:flex p-6 duration-500 transform origin-top-right border *:py-2 *:border-b hover:*:bg-gray-50 ${!user && 'scale-0'}  rounded-lg ${card ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}>
           <Link to='/profile'>Profile</Link>
           <Link to='/dashboard'>Dashboard</Link>
-          <li onClick={() => {logOut() ; setCard(false)}} className='flex  items-center space-x-2 hover:text-red-500 cursor-pointer'>
+          <li onClick={() => { logOut(); setCard(false) }} className='flex  items-center space-x-2 hover:text-red-500 cursor-pointer'>
             <span>Sign Out</span>
             <PiSignOutFill className='text-2xl' />
           </li>
