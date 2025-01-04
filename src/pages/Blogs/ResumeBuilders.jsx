@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ResumeBuilders = () => {
     return (
-        <div className="blog-baground">
+        <div className="basic-baground">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 pb-12 pt-16 md:pb-16 md:pt-20 md:px-8 ">
         <span className="sr-only">
           <h1>Himalayas Blog</h1>

@@ -6,6 +6,7 @@ import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import About from "../pages/About/About";
 import Jobs from "../pages/Jobs/Jobs";
+import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Profile from "../pages/Profile";
@@ -55,14 +56,18 @@ export const router = createBrowserRouter([
             element: <Blogs />
          },
          {
+            path: '/blog-details',
+            element: <BlogDetails></BlogDetails>
+         },
+         {
             path: '/profile',
             element: <Profile />
          },
          {
             path: '/contact-us',
             element: <ContactUs />
-         },
-         
+         }
+
       ]
    },
    {
