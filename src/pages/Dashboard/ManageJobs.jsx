@@ -7,9 +7,9 @@ const ManageJobs = () => {
    const axiosPublic = useAxiosPublic();
 
    const { data: jobs = [], isLoading, refetch } = useQuery({
-      queryKey: ['jobs'],
+      queryKey: ['allJobs'],
       queryFn: async () => {
-         const res = await axiosPublic.get('/jobs')
+         const res = await axiosPublic.get('/allJobs')
          return res.data;
       }
    })
