@@ -5,14 +5,30 @@ import Pricing from "../pages/Pricing/Pricing";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import About from "../pages/About/About";
-import Blogs from "../pages/Blogs/Blogs";
 import Jobs from "../pages/Jobs/Jobs";
+<<<<<<< HEAD
 import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
+=======
+import Blogs from "../pages/Blogs/Blogs";
+import ErrorPage from "../ErrorPage/ErrorPage";
+import Profile from "../pages/Profile";
+import Dashboard from "../layouts/Dashboard";
+import Statistics from "../pages/Dashboard/Statistics";
+import ManageJobs from "../pages/Dashboard/ManageJobs";
+import ManageUsers from "../pages/Dashboard/ManageUsers";
+import AddJob from "../pages/Dashboard/AddJob";
+import AddBlog from "../pages/Dashboard/AddBlog";
+import ManageBlogs from "../pages/Dashboard/ManageBlogs";
+import Bookings from "../pages/Dashboard/Bookings";
+import PaymentHistory from "../pages/Dashboard/PaymentHistory";
+import ContactUs from "../pages/ContactUs/ContactUs";
+>>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
 
 export const router = createBrowserRouter([
    {
       path: "/",
       element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
          {
             index: true,
@@ -43,9 +59,65 @@ export const router = createBrowserRouter([
             element: <Blogs />
          },
          {
+<<<<<<< HEAD
             path: '/blog-details',
             element: <BlogDetails></BlogDetails>
          },
+=======
+            path: '/profile',
+            element: <Profile />
+         },
+         {
+            path: '/contact-us',
+            element: <ContactUs />
+         },
+         
+>>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
       ]
    },
+   {
+      path: '/dashboard',
+      element: <Dashboard />,
+      children: [
+         {
+            index: true,
+            element: <Statistics />
+         },
+         {
+            path: 'statistics',
+            element: <Statistics />
+         },
+         {
+            path: 'addJob',
+            element: <AddJob />
+         },
+         {
+            path: 'manageJobs',
+            element: <ManageJobs />
+         },
+         {
+            path: 'addBlogs',
+            element: <AddBlog />
+
+         },
+         {
+            path: 'manageBlogs',
+            element: <ManageBlogs />
+         },
+         {
+            path: 'bookings',
+            element: <Bookings />
+         },
+         {
+            path: 'manageUsers',
+            element: <ManageUsers />
+         },
+         {
+            path: 'paymentHistory',
+            element: <PaymentHistory />
+         }
+
+      ]
+   }
+
 ]);

@@ -1,9 +1,26 @@
+import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { useEffect, useState } from "react";
 
 const MostRecent = () => {
+  const [recent, setRecent] = useState([]);
+
+  const axiosPublic = useAxiosPublic();
+
+  const recentBlogs = async () => {
+    const { data } = await axiosPublic.get("recent-blogs");
+    setRecent(data);
+    console.log(data);
+  };
+
+  useEffect(() => {
+    recentBlogs();
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto flex flex-col xl:flex-row ">
       <div className="mt-8 flex-shrink-0 px-4 md:mb-4 md:mt-16 md:px-8 xl:mb-24 xl:h-auto">
@@ -57,6 +74,7 @@ const MostRecent = () => {
           </div>
           {/* Card section */}
           <div className="grid grid-cols-1 border-b border-gray-100 md:grid-cols-2 md:gap-x-6">
+<<<<<<< HEAD
             <div className="mb-12 transition transform ease-in hover:-translate-y-1">
               <Link to={"/blog-details"}>
                 <div className="relative mb-5 h-52 md:mb-6 md:h-56">
@@ -70,85 +88,56 @@ const MostRecent = () => {
               <Link
                 to={"/"}
                 className="mb-1 block text-sm font-medium text-violet-700"
+=======
+            {recent?.map((blog, index) => (
+              <div
+                key={index}
+                className="mb-12 transition transform ease-in hover:-translate-y-1"
+>>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
               >
-                <span>Interviewing</span>{" "}
-              </Link>
-              <Link
-                to={"/"}
-                className="mb-1 block text-sm font-medium text-violet-700"
-              >
-                <h3 className="mb-2 text-lg font-medium text-gray-900 md:text-xl">
-                  20 Phone Interview Questions and Answers
-                </h3>
-                <p className="mb-5 line-clamp-3 text-base text-gray-600 md:mb-6">
-                  By understanding common questions, practicing your responses
-                  using the STAR method, and presenting yourself professionally,
-                  you increase your chances of advancing to the next stage of
-                  the hiring process.
-                </p>
-              </Link>
-              <Link to={"/"} className="flex items-center">
-                <span className="w-[50px] h-[50px] bg-white rounded-full flex justify-center border  border-gray-200 items-center  mr-3">
-                  <img
-                    className="p-2"
-                    src="https://i.ibb.co.com/9HKLJLq/JZLogo.png"
-                    alt="Logo"
-                  />
-                </span>
-                <div>
-                  <p className="font-medium text-gray-900 text-base">
-                    Jobszone
+                <Link to={"/"}>
+                  <div className="relative mb-5 h-52 md:mb-6 md:h-56">
+                    <img
+                      className="h-full w-full object-cover"
+                      src={blog.image}
+                      alt="pic"
+                    />
+                  </div>
+                </Link>
+                <Link
+                  to={"/"}
+                  className="mb-1 block text-sm font-medium text-violet-700"
+                >
+                  <span>{blog.category}</span>{" "}
+                </Link>
+                <Link
+                  to={"/"}
+                  className="mb-1 block text-sm font-medium text-violet-700"
+                >
+                  <h3 className="mb-2 text-lg font-medium text-gray-900 md:text-xl">
+                    {blog.title}
+                  </h3>
+                  <p className="mb-5 line-clamp-3 text-base text-gray-600 md:mb-6">
+                    {blog.content}
                   </p>
-                  <time className="text-gray-600 text-base">Dec 05, 2024</time>
-                </div>
-              </Link>
-            </div>
-
-            <div className="mb-12 transition transform ease-in hover:-translate-y-1">
-              <Link to={"/"}>
-                <div className="relative mb-5 h-52 md:mb-6 md:h-56">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="https://i.ibb.co.com/cQGrZXk/Interview1.jpg"
-                    alt="pic"
-                  />
-                </div>
-              </Link>
-              <Link
-                to={"/"}
-                className="mb-1 block text-sm font-medium text-violet-700"
-              >
-                <span>Interviewing</span>{" "}
-              </Link>
-              <Link
-                to={"/"}
-                className="mb-1 block text-sm font-medium text-violet-700"
-              >
-                <h3 className="mb-2 text-lg font-medium text-gray-900 md:text-xl">
-                  6 Best AI Interview Practice Tools
-                </h3>
-                <p className="mb-5 line-clamp-3 text-base text-gray-600 md:mb-6">
-                  Discover the best AI interview practice tools to ace your next
-                  job interview. Learn how AI mock interviews and coaching can
-                  boost your confidence and skills.
-                </p>
-              </Link>
-              <Link to={"/"} className="flex items-center">
-                <span className="w-[50px] h-[50px] bg-white rounded-full flex justify-center border  border-gray-200 items-center  mr-3">
-                  <img
-                    className="p-2"
-                    src="https://i.ibb.co.com/9HKLJLq/JZLogo.png"
-                    alt="Logo"
-                  />
-                </span>
-                <div>
-                  <p className="font-medium text-gray-900 text-base">
-                    Jobszone
-                  </p>
-                  <time className="text-gray-600 text-base">Dec 05, 2024</time>
-                </div>
-              </Link>
-            </div>
+                </Link>
+                <Link to={"/"} className="flex items-center">
+                  <span className="w-[50px] h-[50px] bg-white rounded-full flex justify-center border  border-gray-200 items-center  mr-3">
+                    <img
+                      className="p-2"
+                      src="https://i.ibb.co.com/9HKLJLq/JZLogo.png" // todo : change this posted users image link
+                      alt="Logo"
+                    />
+                  </span>
+                  <div>
+                    <p className="font-medium text-gray-900 text-base">
+                      {blog.author}
+                    </p>
+                    <time className="text-gray-600 text-base">{blog.date}</time>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </div>
