@@ -39,11 +39,8 @@ const ManageJobs = () => {
                         icon: "success"
                      });
                      refetch();
-
                   }
-
                })
-
          }
       });
    }
@@ -52,84 +49,73 @@ const ManageJobs = () => {
       <div>
          <DashboardTitle title='Manage Jobs' />
 
-         {
-            jobs.length > 0 ?
-               <>
-                  <div className="">
-                     <div className="overflow-x-auto">
-                        <table className="min-w-full text-xs border *:border">
-                           <colgroup>
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                              <col />
-                           </colgroup>
-                           <thead>
-                              <tr className="text-left">
-                                 <th className="p-3">SL</th>
-                                 <th className="p-3">Photo</th>
-                                 <th className="p-3">Title</th>
-                                 <th className="p-3">Salary</th>
-                                 <th className="p-3">Company</th>
-                                 <th className="p-3">Deadline</th>
-                                 <th className="p-3">Name</th>
-                                 <th className="p-3">Email</th>
-                                 <th className="p-3">Delete</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              {
-                                 jobs.map((job, i) => <tr key={i} className="border">
-                                    <td className="p-2">
-                                       <p>{i + 1}</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <img src={job.author.photo} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.title.slice(0, 20)}...</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.salary}</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.companyName}</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.deadline}</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.author.name.slice(0, 20)}</p>
-                                    </td>
-                                    <td className="p-2">
-                                       <p>{job.author.email}</p>
-                                    </td>
+         <div className="">
+            <div className="overflow-x-auto">
+               <table className="min-w-full text-xs border *:border">
+                  <colgroup>
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                     <col />
+                  </colgroup>
+                  <thead>
+                     <tr className="text-left">
+                        <th className="p-3">SL</th>
+                        <th className="p-3">Photo</th>
+                        <th className="p-3">Title</th>
+                        <th className="p-3">Salary</th>
+                        <th className="p-3">Company</th>
+                        <th className="p-3">Deadline</th>
+                        <th className="p-3">Name</th>
+                        <th className="p-3">Email</th>
+                        <th className="p-3">Delete</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     {
+                        jobs.map((job, i) => <tr key={i} className="border">
+                           <td className="p-2">
+                              <p>{i + 1}</p>
+                           </td>
+                           <td className="p-2">
+                              <img src={job.author.photo} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
+                           </td>
+                           <td className="p-2">
+                              <p>{job.title.slice(0, 20)}...</p>
+                           </td>
+                           <td className="p-2">
+                              <p>{job.salary}</p>
+                           </td>
+                           <td className="p-2">
+                              <p>{job.companyName}</p>
+                           </td>
+                           <td className="p-2">
+                              <p>{job.deadline}</p>
+                           </td>
+                           <td className="p-2">
+                              <p>{job.author.name.slice(0, 20)}</p>
+                           </td>
+                           <td className="p-2">
+                              <p>{job.author.email}</p>
+                           </td>
 
-                                    <td className="p-2">
-                                       <span onClick={() => handleDelete(job._id)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
-                                          <span>Delete</span>
-                                       </span>
-                                    </td>
-                                 </tr>)
-                              }
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </>
-               :
-               <>
-                  <div>
-                     <h2>No jobs has been added yet</h2>
-                     <Link to='/jobs'>Browse Jobs</Link>
-                  </div>
-               </>
-         }
+                           <td className="p-2">
+                              <span onClick={() => handleDelete(job._id)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
+                                 <span>Delete</span>
+                              </span>
+                           </td>
+                        </tr>)
+                     }
+                  </tbody>
+               </table>
+            </div>
+         </div>
+
       </div>
    );
 };
