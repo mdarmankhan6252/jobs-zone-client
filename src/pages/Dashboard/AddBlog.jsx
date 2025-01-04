@@ -1,11 +1,16 @@
+import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { PiSpinnerGapThin } from "react-icons/pi";
 import useAuth from "../../hooks/useAuth";
 import DashboardTitle from "./DashboardTitle";
 
 const AddBlog = () => {
   const { user } = useAuth();
+  const [imageLoading, setImageLoading] = useState(false);
   const [tags, setTags] = useState([]);
+  const [imageURL, setImageURL] = useState("");
+  const imageUpload = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_ImgBB_api_key}`;
 
   const handleStoreTags = (e) => {
     const tag = e.target.value.split(",");
@@ -32,7 +37,33 @@ const AddBlog = () => {
     "Job Search",
   ];
 
-  const handleAddCraftItem = (e) => {
+  const uploadImage = async (e) => {
+    setImageLoading(true);
+    const image = e.target.files[0];
+    const formData = new FormData();
+    formData.append("image", image);
+
+    const res = await axios.post(imageUpload, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+
+    console.log(res.data);
+
+    const imageURL = res.data.data.display_url;
+
+    if (res.data.success) {
+      setImageLoading(false);
+      setImageURL(imageURL);
+      toast.success("Image uploaded successfully");
+    } else {
+      toast.error("Failed to upload image, please try again");
+      setImageLoading(false);
+    }
+  };
+
+  const handleAddBlogs = async (e) => {
     e.preventDefault();
 
     const title = e.target.title.value;
@@ -40,7 +71,12 @@ const AddBlog = () => {
     const summery = e.target.summery.value;
     const description = e.target.description.value;
 
+    if (!imageURL) {
+      return toast.error("Please upload an image");
+    }
+
     const blog = {
+      imageURL,
       title,
       summery,
       description,
@@ -56,18 +92,38 @@ const AddBlog = () => {
     };
 
     console.log(blog);
-    console.log(tags.length);
     toast.success("Blog added successfully");
   };
   return (
     <div>
       <DashboardTitle title="Add Blogs" />
 
-      <form onSubmit={handleAddCraftItem} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
+      <form onSubmit={handleAddBlogs} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
         <h3 className="font-medium text-xl mb-4">Blog information</h3>
 
-        {/* title */}
+        {/* image */}
         <div>
+          <label htmlFor="image" className="block mb-2 text-sm">
+            Upload image
+          </label>
+
+          {/* show image preview */}
+          {imageLoading && (
+            <div className="mb-4">
+              <PiSpinnerGapThin className="text-2xl mx-auto animate-spin " />
+            </div>
+          )}
+          {imageURL && (
+            <div className="mb-4">
+              <img src={imageURL} className="w-[60%] mx-auto" alt="Blog image preview" />
+            </div>
+          )}
+
+          <input id="image" type="file" className="w-full p-2 border border-gray-200 rounded" onChange={uploadImage} required />
+        </div>
+
+        {/* title */}
+        <div className="mt-4">
           <label htmlFor="title" className="block mb-2 text-sm">
             Title
           </label>

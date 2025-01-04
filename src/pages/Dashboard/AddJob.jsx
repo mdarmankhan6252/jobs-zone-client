@@ -29,7 +29,7 @@ const AddJob = () => {
   const experienceLevels = ["Entry Level", "Mid Level", "Senior Level"];
   const locations = ["Remote", "On-site", "Hybrid"];
 
-  const handleAddCraftItem = (e) => {
+  const handleAddJob = (e) => {
     e.preventDefault();
 
     const title = e.target.title.value;
@@ -77,7 +77,7 @@ const AddJob = () => {
     <div>
       <DashboardTitle title="Add Jobs" />
 
-      <form onSubmit={handleAddCraftItem} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
+      <form onSubmit={handleAddJob} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
         <h3 className="font-medium text-xl mb-4">Job information</h3>
 
         {/* title and category */}
