@@ -1,4 +1,3 @@
-import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { IoIosArrowDown } from "react-icons/io";
@@ -74,26 +73,10 @@ const MostRecent = () => {
           </div>
           {/* Card section */}
           <div className="grid grid-cols-1 border-b border-gray-100 md:grid-cols-2 md:gap-x-6">
-<<<<<<< HEAD
-            <div className="mb-12 transition transform ease-in hover:-translate-y-1">
-              <Link to={"/blog-details"}>
-                <div className="relative mb-5 h-52 md:mb-6 md:h-56">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="https://i.ibb.co.com/cQGrZXk/Interview1.jpg"
-                    alt="pic"
-                  />
-                </div>
-              </Link>
-              <Link
-                to={"/"}
-                className="mb-1 block text-sm font-medium text-violet-700"
-=======
             {recent?.map((blog, index) => (
               <div
                 key={index}
                 className="mb-12 transition transform ease-in hover:-translate-y-1"
->>>>>>> b3ba8859b00888858406a626139ad0b3d2e74ebc
               >
                 <Link to={"/"}>
                   <div className="relative mb-5 h-52 md:mb-6 md:h-56">
