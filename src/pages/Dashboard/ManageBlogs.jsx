@@ -29,7 +29,7 @@ const ManageBlogs = () => {
          confirmButtonText: "Yes, delete it!"
       }).then((result) => {
          if (result.isConfirmed) {
-            axiosPublic.delete(`/job/${id}`)
+            axiosPublic.delete(`/blog/${id}`)
                .then(res => {
                   if (res.data.deletedCount > 0) {
                      Swal.fire({
