@@ -7,6 +7,7 @@ import Register from "../pages/Auth/Register";
 import About from "../pages/About/About";
 import Blogs from "../pages/Blogs/Blogs";
 import Jobs from "../pages/Jobs/Jobs";
+import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
 
 export const router = createBrowserRouter([
    {
@@ -40,7 +41,11 @@ export const router = createBrowserRouter([
          {
             path: '/blogs',
             element: <Blogs />
-         }
+         },
+         {
+            path: '/blog-details',
+            element: <BlogDetails></BlogDetails>
+         },
       ]
    },
 ]);

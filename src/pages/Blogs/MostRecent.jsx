@@ -58,7 +58,7 @@ const MostRecent = () => {
           {/* Card section */}
           <div className="grid grid-cols-1 border-b border-gray-100 md:grid-cols-2 md:gap-x-6">
             <div className="mb-12 transition transform ease-in hover:-translate-y-1">
-              <Link to={"/"}>
+              <Link to={"/blog-details"}>
                 <div className="relative mb-5 h-52 md:mb-6 md:h-56">
                   <img
                     className="h-full w-full object-cover"
