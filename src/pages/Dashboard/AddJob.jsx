@@ -1,10 +1,11 @@
-import axios from "axios";
 import toast from "react-hot-toast";
 import useAuth from "../../hooks/useAuth";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 
 const AddJob = () => {
   const { user } = useAuth();
+  const axiosPublic = useAxiosPublic();
 
   const jobCategories = [
     "Web Development",
@@ -59,15 +60,15 @@ const AddJob = () => {
       },
     };
 
-    axios.post("http://localhost:5000/job", job).then((res) => {
+    axiosPublic.post("/job", job).then((res) => {
       console.log(res.data);
       if (res.data.insertedId) {
         toast.success("Job added successfully");
         e.target.reset();
-        jobType.value = "";
-        experienceLevel.value = "";
-        location.value = "";
-        category.value = "";
+        e.target.value = "";
+        e.target.value = "";
+        e.target.value = "";
+        e.target.value = "";
       } else {
         toast.error("Failed to add job, please try again");
       }

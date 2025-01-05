@@ -3,6 +3,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { PiSpinnerGapThin } from "react-icons/pi";
 import useAuth from "../../hooks/useAuth";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 
 const AddBlog = () => {
@@ -11,6 +12,7 @@ const AddBlog = () => {
   const [tags, setTags] = useState([]);
   const [imageURL, setImageURL] = useState("");
   const imageUpload = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_ImgBB_api_key}`;
+  const axiosPublic = useAxiosPublic();
 
   const handleStoreTags = (e) => {
     const tag = e.target.value.split(",");
@@ -91,8 +93,22 @@ const AddBlog = () => {
       },
     };
 
-    console.log(blog);
-    toast.success("Blog added successfully");
+    // console.log(blog);
+    // toast.success("Blog added successfully");
+
+    axiosPublic.post("/blog", blog).then((res) => {
+      console.log(res.data);
+      if (res.data.insertedId) {
+        toast.success("Blog added successfully");
+        e.target.reset();
+        e.target.category.value = "";
+        setTags([]);
+        setImageURL("");
+        setTags([]);
+      } else {
+        toast.error("Failed to add blog, please try again");
+      }
+    });
   };
   return (
     <div>
@@ -115,7 +131,7 @@ const AddBlog = () => {
           )}
           {imageURL && (
             <div className="mb-4">
-              <img src={imageURL} className="w-[60%] mx-auto" alt="Blog image preview" />
+              <img src={imageURL} className="w-[60%] mx-auto bg-gray-200" alt="Blog image preview" />
             </div>
           )}
 
