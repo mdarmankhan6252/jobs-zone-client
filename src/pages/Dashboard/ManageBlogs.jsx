@@ -77,13 +77,13 @@ const ManageBlogs = () => {
                               <p>{i + 1}</p>
                            </td>
                            <td className="p-2">
-                              <img src={blog.image} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
+                              <img src={blog.imageURL} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
                            </td>
                            <td className="p-2">
                               <p>{blog.title.slice(0, 20)}...</p>
                            </td>
                            <td className="p-2">
-                              <p>{blog.author}</p>
+                              <p>{blog.author.name}</p>
                            </td>
                            <td className="p-2">
                               <p>{blog.category}</p>
