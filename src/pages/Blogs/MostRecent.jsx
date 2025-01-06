@@ -1,4 +1,3 @@
-import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { IoIosArrowDown } from "react-icons/io";
