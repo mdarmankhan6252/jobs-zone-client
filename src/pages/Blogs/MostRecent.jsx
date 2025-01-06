@@ -108,7 +108,7 @@ const MostRecent = () => {
                   <span className="w-[50px] h-[50px] bg-white rounded-full flex justify-center border  border-gray-200 items-center  mr-3">
                     <img
                       className="p-2"
-                      src="https://i.ibb.co.com/9HKLJLq/JZLogo.png" // todo : change this posted users image link
+                      src={blog.author.photo}// todo : change this posted users image link
                       alt="Logo"
                     />
                   </span>
