@@ -1,10 +1,11 @@
-import axios from "axios";
 import toast from "react-hot-toast";
 import useAuth from "../../hooks/useAuth";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 
 const AddJob = () => {
   const { user } = useAuth();
+  const axiosPublic = useAxiosPublic();
 
   const jobCategories = [
     "Web Development",
@@ -29,7 +30,7 @@ const AddJob = () => {
   const experienceLevels = ["Entry Level", "Mid Level", "Senior Level"];
   const locations = ["Remote", "On-site", "Hybrid"];
 
-  const handleAddCraftItem = (e) => {
+  const handleAddJob = (e) => {
     e.preventDefault();
 
     const title = e.target.title.value;
@@ -59,15 +60,15 @@ const AddJob = () => {
       },
     };
 
-    axios.post("http://localhost:5000/job", job).then((res) => {
+    axiosPublic.post("/job", job).then((res) => {
       console.log(res.data);
       if (res.data.insertedId) {
         toast.success("Job added successfully");
         e.target.reset();
-        jobType.value = "";
-        experienceLevel.value = "";
-        location.value = "";
-        category.value = "";
+        e.target.value = "";
+        e.target.value = "";
+        e.target.value = "";
+        e.target.value = "";
       } else {
         toast.error("Failed to add job, please try again");
       }
@@ -77,7 +78,7 @@ const AddJob = () => {
     <div>
       <DashboardTitle title="Add Jobs" />
 
-      <form onSubmit={handleAddCraftItem} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
+      <form onSubmit={handleAddJob} className="border border-gray-200 p-8 rounded-xl max-w-3xl mx-auto mb-8">
         <h3 className="font-medium text-xl mb-4">Job information</h3>
 
         {/* title and category */}
