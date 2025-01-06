@@ -13,8 +13,10 @@ const useAdmin = () => {
          return data;
       }
    })
+   console.log(isAdmin, 'use admin');
 
    return [isAdmin, isLoading, refetch]
+   
 };
 
 export default useAdmin;

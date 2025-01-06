@@ -10,6 +10,7 @@ import useAdmin from "../../hooks/useAdmin";
 
 const DashboardRoute = () => {
    const [isAdmin] = useAdmin();
+   console.log(isAdmin, 'admin')
 
    return (
       <div className="py-10 px-6 space-y-4 dashboard-nav">
