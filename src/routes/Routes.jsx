@@ -19,113 +19,63 @@ import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
 import ContactUs from "../pages/ContactUs/ContactUs";
-<<<<<<< HEAD
 import Payment from "../pages/payment/payment";
-=======
 import Profile from "../pages/profile/Profile";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
->>>>>>> arman
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About></About>,
-      },
-      {
-        path: "/pricing",
-        element: <Pricing></Pricing>,
-      },
+   {
+      path: "/",
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+         {
+            index: true,
+            element: <Home />,
+         },
+         {
+            path: "/about",
+            element: <About></About>,
+         },
+         {
+            path: "/pricing",
+            element: <Pricing></Pricing>,
+         },
 
-<<<<<<< HEAD
-      {
-        path: "/payment",
-        element: <Payment />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
-      {
-        path: "/jobs",
-        element: <Jobs />,
-      },
-      {
-        path: "/blogs",
-        element: <Blogs />,
-      },
-      {
-        path: "/blog-details",
-        element: <BlogDetails></BlogDetails>,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/contact-us",
-        element: <ContactUs />,
-      },
-    ],
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-    children: [
-      {
-        index: true,
-        element: <Statistics />,
-      },
-      {
-        path: "statistics",
-        element: <Statistics />,
-      },
-      {
-        path: "addJob",
-        element: <AddJob />,
-      },
-      {
-        path: "manageJobs",
-        element: <ManageJobs />,
-      },
-      {
-        path: "addBlogs",
-        element: <AddBlog />,
-      },
-      {
-        path: "manageBlogs",
-        element: <ManageBlogs />,
-      },
-      {
-        path: "bookings",
-        element: <Bookings />,
-      },
-      {
-        path: "manageUsers",
-        element: <ManageUsers />,
-      },
-      {
-        path: "paymentHistory",
-        element: <PaymentHistory />,
-      },
-    ],
-  },
-]);
-=======
-      ]
+         {
+            path: "/payment",
+            element: <Payment />,
+         },
+         {
+            path: "/login",
+            element: <Login />,
+         },
+         {
+            path: "/register",
+            element: <Register />,
+         },
+         {
+            path: "/jobs",
+            element: <Jobs />,
+         },
+         {
+            path: "/blogs",
+            element: <Blogs />,
+         },
+         {
+            path: "/blog-details",
+            element: <BlogDetails></BlogDetails>,
+         },
+         {
+            path: "/profile",
+            element: <Profile />,
+         },
+         {
+            path: "/contact-us",
+            element: <ContactUs />,
+         },
+      ],
    },
    {
       path: '/dashboard',
@@ -173,4 +123,4 @@ export const router = createBrowserRouter([
    }
 
 ]);
->>>>>>> arman
+
