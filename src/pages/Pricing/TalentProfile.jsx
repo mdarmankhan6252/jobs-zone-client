@@ -1,6 +1,7 @@
 
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import JobBoard from "./JobBoard";
+import { Link } from "react-router-dom";
 
 
 const TalentProfile = () => {
@@ -188,12 +189,12 @@ const TalentProfile = () => {
               </p>
             </div>
           </div>
-          <a
+          <Link to="/payment"
             className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
-            href="/"
+          
           >
             Post a job
-          </a>
+          </Link>
         </div>
       </div>
       {/*  */}
