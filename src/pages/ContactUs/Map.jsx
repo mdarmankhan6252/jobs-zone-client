@@ -8,6 +8,7 @@ const Map = () => {
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          zIndex={0}
         />
         <Marker position={[24.88938953803653, 91.89110781554236]}>
           <Popup>

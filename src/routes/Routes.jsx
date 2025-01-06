@@ -9,7 +9,6 @@ import Jobs from "../pages/Jobs/Jobs";
 import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import Profile from "../pages/Profile";
 import Dashboard from "../layouts/Dashboard";
 import Statistics from "../pages/Dashboard/Statistics";
 import ManageJobs from "../pages/Dashboard/ManageJobs";
@@ -20,6 +19,10 @@ import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Payment from "../pages/payment/payment";
+import Profile from "../pages/profile/Profile";
+import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
    {
@@ -29,50 +32,54 @@ export const router = createBrowserRouter([
       children: [
          {
             index: true,
-            element: <Home />
+            element: <Home />,
          },
          {
-            path: '/about',
-            element: <About></About>
+            path: "/about",
+            element: <About></About>,
          },
          {
-            path: '/pricing',
-            element: <Pricing></Pricing>
+            path: "/pricing",
+            element: <Pricing></Pricing>,
          },
-         {
-            path: '/login',
-            element: <Login />
-         },
-         {
-            path: '/register',
-            element: <Register />
-         },
-         {
-            path: '/jobs',
-            element: <Jobs />
-         },
-         {
-            path: '/blogs',
-            element: <Blogs />
-         },
-         {
-            path: '/blog-details',
-            element: <BlogDetails></BlogDetails>
-         },
-         {
-            path: '/profile',
-            element: <Profile />
-         },
-         {
-            path: '/contact-us',
-            element: <ContactUs />
-         }
 
-      ]
+         {
+            path: "/payment",
+            element: <Payment />,
+         },
+         {
+            path: "/login",
+            element: <Login />,
+         },
+         {
+            path: "/register",
+            element: <Register />,
+         },
+         {
+            path: "/jobs",
+            element: <Jobs />,
+         },
+         {
+            path: "/blogs",
+            element: <Blogs />,
+         },
+         {
+            path: "/blog-details",
+            element: <BlogDetails></BlogDetails>,
+         },
+         {
+            path: "/profile",
+            element: <Profile />,
+         },
+         {
+            path: "/contact-us",
+            element: <ContactUs />,
+         },
+      ],
    },
    {
       path: '/dashboard',
-      element: <Dashboard />,
+      element: <PrivateRoute><Dashboard /></PrivateRoute>,
       children: [
          {
             index: true,
@@ -80,7 +87,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'statistics',
-            element: <Statistics />
+            element: <AdminRoute><Statistics /></AdminRoute>
          },
          {
             path: 'addJob',
@@ -97,7 +104,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'manageBlogs',
-            element: <ManageBlogs />
+            element: <AdminRoute><ManageBlogs /></AdminRoute>
          },
          {
             path: 'bookings',
@@ -105,7 +112,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'manageUsers',
-            element: <ManageUsers />
+            element: <AdminRoute><ManageUsers /></AdminRoute>
          },
          {
             path: 'paymentHistory',
@@ -116,3 +123,4 @@ export const router = createBrowserRouter([
    }
 
 ]);
+

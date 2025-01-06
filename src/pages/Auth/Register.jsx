@@ -5,10 +5,12 @@ import GoogleLogin from "./GoogleLogin";
 import { useState } from "react";
 import { PiSpinnerGapThin } from "react-icons/pi";
 import axios from 'axios'
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Register = () => {
 
     const [loading, setLoading] = useState(false)
+    const axiosPublic = useAxiosPublic();
 
     const { createUser, updateUserProfile, user, setUser } = useAuth()
     const navigate = useNavigate();
@@ -50,8 +52,15 @@ const Register = () => {
                 .then(() => {
                     updateUserProfile(name, photo)
                     setUser({ ...user, displayName: name, photoURL: photo })
-                    navigate('/')
-                    toast.success('Sign Up successful!')
+
+                    const postedUser = { name, photo, email, role: 'general' }
+
+                    axiosPublic.post('/user', postedUser).then(res => {
+                        if (res.insertedId) {
+                            toast.success("Sign Up Successful!")
+                            navigate('/')
+                        }
+                    })
                 })
                 .catch(err => {
                     console.log(err);
