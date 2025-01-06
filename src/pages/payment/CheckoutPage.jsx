@@ -23,9 +23,14 @@ const CheckoutPage = ({ clientSecret }) => {
 
   if (error) {
     console.error("Payment error:", error.message);
+  }
+
   if (paymentIntent.status === "succeeded"){
     console.log("Payment successful:", paymentIntent);
-    // do other stuf
+
+    // do something with the paymentIntent
+
+    
   }
 };
 
