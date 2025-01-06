@@ -9,7 +9,6 @@ import Jobs from "../pages/Jobs/Jobs";
 import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import Profile from "../pages/Profile";
 import Dashboard from "../layouts/Dashboard";
 import Statistics from "../pages/Dashboard/Statistics";
 import ManageJobs from "../pages/Dashboard/ManageJobs";
@@ -20,6 +19,9 @@ import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import Profile from "../pages/profile/Profile";
+import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
    {
@@ -72,7 +74,7 @@ export const router = createBrowserRouter([
    },
    {
       path: '/dashboard',
-      element: <Dashboard />,
+      element: <PrivateRoute><Dashboard /></PrivateRoute>,
       children: [
          {
             index: true,
@@ -80,7 +82,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'statistics',
-            element: <Statistics />
+            element: <AdminRoute><Statistics /></AdminRoute>
          },
          {
             path: 'addJob',
@@ -97,7 +99,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'manageBlogs',
-            element: <ManageBlogs />
+            element: <AdminRoute><ManageBlogs /></AdminRoute>
          },
          {
             path: 'bookings',
@@ -105,7 +107,7 @@ export const router = createBrowserRouter([
          },
          {
             path: 'manageUsers',
-            element: <ManageUsers />
+            element: <AdminRoute><ManageUsers /></AdminRoute>
          },
          {
             path: 'paymentHistory',

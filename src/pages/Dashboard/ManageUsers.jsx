@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 import { useQuery } from '@tanstack/react-query'
@@ -18,7 +19,10 @@ const ManageUsers = () => {
       <p className="text-5xl  font-semibold text-center">Loading...</p>
    }
 
-   const handleDelete = id => {
+   const handleDelete = (id, role) => {
+      if(role === 'admin'){
+         return toast.error('You are not able to delete Admin account.')
+      }
       Swal.fire({
          title: "Are you sure?",
          text: "You won't be able to revert this!",
@@ -84,10 +88,10 @@ const ManageUsers = () => {
                               <p>{user.email}</p>
                            </td>
                            <td className="p-2">
-                              <p className={`${user.role === 'admin' && 'text-purple-600'} ${user.role === 'general' && 'text-blue-600'}`}>{user.role}</p>
+                              <p className={`${user.role === 'admin' && 'text-green-600'} ${user.role === 'general' && 'text-blue-600'}`}>{user.role}</p>
                            </td>
                            <td className="p-2">
-                              <span onClick={() => handleDelete(user._id)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
+                              <span onClick={() => handleDelete(user._id, user.role)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
                                  <span>Delete</span>
                               </span>
                            </td>
