@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { GoDependabot } from "react-icons/go";
 import logo from '../../assets/logo.png'
 import { IoIosAddCircleOutline } from "react-icons/io";
@@ -10,9 +10,9 @@ import { IoHomeOutline } from "react-icons/io5";
 const DashboardRoute = () => {
    return (
       <div className="py-10 px-6 space-y-4 dashboard-nav">
-         <div className="flex items-center justify-center w-full pb-4">
+         <Link to='/' className="flex items-center justify-center w-full pb-4">
             <img src={logo} alt="" className="w-52"/>
-         </div>
+         </Link>
 
          <NavLink to='/dashboard/statistics' className="flex items-center space-x-2 p-2 border rounded-lg">
             <GoDependabot className="text-2xl"/>

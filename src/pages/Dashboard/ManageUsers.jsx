@@ -29,12 +29,12 @@ const ManageUsers = () => {
          confirmButtonText: "Yes, delete it!"
       }).then((result) => {
          if (result.isConfirmed) {
-            axiosPublic.delete(`/blog/${id}`)
+            axiosPublic.delete(`/user/${id}`)
                .then(res => {
                   if (res.data.deletedCount > 0) {
                      Swal.fire({
                         title: "Deleted!",
-                        text: "Your file has been deleted.",
+                        text: "User has been deleted!",
                         icon: "success"
                      });
                      refetch();
@@ -46,7 +46,7 @@ const ManageUsers = () => {
 
    return (
       <div>
-         <DashboardTitle title='Manage Blogs' />
+         <DashboardTitle title='Manage Users' />
 
          <div className="">
             <div className="overflow-x-auto">
@@ -57,43 +57,37 @@ const ManageUsers = () => {
                      <col />
                      <col />
                      <col />
-                     <col />
                   </colgroup>
                   <thead>
                      <tr className="text-left">
                         <th className="p-3">SL</th>
-                        <th className="p-3">Image</th>
-                        <th className="p-3">Title</th>
-                        <th className="p-3">Author</th>
-                        <th className="p-3">Category</th>
-                        <th className="p-3">Date</th>
+                        <th className="p-3">Photo</th>
+                        <th className="p-3">Name</th>
+                        <th className="p-3">Email</th>
+                        <th className="p-3">Role</th>
                         <th className="p-3">Delete</th>
                      </tr>
                   </thead>
                   <tbody>
                      {
-                        blogs.map((blog, i) => <tr key={i} className="border">
+                        blogs.map((user, i) => <tr key={i} className="border">
                            <td className="p-2">
                               <p>{i + 1}</p>
                            </td>
                            <td className="p-2">
-                              <img src={blog.imageURL} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
+                              <img src={user.photo} alt="" className="w-12 rounded-md" referrerPolicy="no-referrer" />
                            </td>
                            <td className="p-2">
-                              <p>{blog.title.slice(0, 20)}...</p>
+                              <p>{user.name}</p>
                            </td>
                            <td className="p-2">
-                              <p>{blog.author.name}</p>
+                              <p>{user.email}</p>
                            </td>
                            <td className="p-2">
-                              <p>{blog.category}</p>
+                              <p className={`${user.role === 'admin' && 'text-purple-600'} ${user.role === 'general' && 'text-blue-600'}`}>{user.role}</p>
                            </td>
                            <td className="p-2">
-                              <p>{blog.date}</p>
-                           </td>
-
-                           <td className="p-2">
-                              <span onClick={() => handleDelete(blog._id)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
+                              <span onClick={() => handleDelete(user._id)} className="px-3 py-1 font-semibold rounded-md bg-red-500 text-white cursor-pointer">
                                  <span>Delete</span>
                               </span>
                            </td>
