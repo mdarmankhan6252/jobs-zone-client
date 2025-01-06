@@ -82,7 +82,7 @@ const MostRecent = () => {
                   <div className="relative mb-5 h-52 md:mb-6 md:h-56">
                     <img
                       className="h-full w-full object-cover"
-                      src={blog.image}
+                      src={blog.imageURL}
                       alt="pic"
                     />
                   </div>
@@ -101,7 +101,7 @@ const MostRecent = () => {
                     {blog.title}
                   </h3>
                   <p className="mb-5 line-clamp-3 text-base text-gray-600 md:mb-6">
-                    {blog.content}
+                    {blog.description}
                   </p>
                 </Link>
                 <Link to={"/"} className="flex items-center">
@@ -114,7 +114,7 @@ const MostRecent = () => {
                   </span>
                   <div>
                     <p className="font-medium text-gray-900 text-base">
-                      {blog.author}
+                      {blog.author.name}
                     </p>
                     <time className="text-gray-600 text-base">{blog.date}</time>
                   </div>

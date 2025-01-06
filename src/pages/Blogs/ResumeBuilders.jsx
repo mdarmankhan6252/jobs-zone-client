@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 
 const ResumeBuilders = () => {
-    return (
-        <div className="basic-baground">
+  return (
+    <div className="basic-baground">
       <div className="max-w-7xl mx-auto flex flex-col items-center px-4 pb-12 pt-16 md:pb-16 md:pt-20 md:px-8 ">
         <span className="sr-only">
           <h1>Himalayas Blog</h1>
@@ -26,7 +26,7 @@ const ResumeBuilders = () => {
               src="https://i.ibb.co.com/yN0H81h/resume-builder.jpg"
               alt="photo"
             />
-          </Link>      
+          </Link>
           <div className="">
             <Link to={"/"} className="mb-2 block font-medium text-violet-700">
               Resume & Cover Letters
@@ -45,15 +45,15 @@ const ResumeBuilders = () => {
                 <img className="p-2" src="https://i.ibb.co.com/9HKLJLq/JZLogo.png" alt="Logo" />
               </span>
               <div>
-              <p className="font-medium text-gray-900 text-base">Jobszone</p>
-              <time className="text-gray-600 text-base" >Dec 05, 2024</time>
+                <p className="font-medium text-gray-900 text-base">Jobszone</p>
+                <time className="text-gray-600 text-base" >Dec 05, 2024</time>
               </div>
             </Link>
           </div>
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default ResumeBuilders;
