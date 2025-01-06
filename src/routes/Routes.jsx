@@ -9,7 +9,6 @@ import Jobs from "../pages/Jobs/Jobs";
 import BlogDetails from "../pages/Blogs/BlogDetails/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import Profile from "../pages/Profile";
 import Dashboard from "../layouts/Dashboard";
 import Statistics from "../pages/Dashboard/Statistics";
 import ManageJobs from "../pages/Dashboard/ManageJobs";
@@ -20,7 +19,13 @@ import ManageBlogs from "../pages/Dashboard/ManageBlogs";
 import Bookings from "../pages/Dashboard/Bookings";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory";
 import ContactUs from "../pages/ContactUs/ContactUs";
+<<<<<<< HEAD
 import Payment from "../pages/payment/payment";
+=======
+import Profile from "../pages/profile/Profile";
+import PrivateRoute from "./PrivateRoute";
+import AdminRoute from "./AdminRoute";
+>>>>>>> arman
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +46,7 @@ export const router = createBrowserRouter([
         element: <Pricing></Pricing>,
       },
 
+<<<<<<< HEAD
       {
         path: "/payment",
         element: <Payment />,
@@ -118,3 +124,53 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
+=======
+      ]
+   },
+   {
+      path: '/dashboard',
+      element: <PrivateRoute><Dashboard /></PrivateRoute>,
+      children: [
+         {
+            index: true,
+            element: <Statistics />
+         },
+         {
+            path: 'statistics',
+            element: <AdminRoute><Statistics /></AdminRoute>
+         },
+         {
+            path: 'addJob',
+            element: <AddJob />
+         },
+         {
+            path: 'manageJobs',
+            element: <ManageJobs />
+         },
+         {
+            path: 'addBlogs',
+            element: <AddBlog />
+
+         },
+         {
+            path: 'manageBlogs',
+            element: <AdminRoute><ManageBlogs /></AdminRoute>
+         },
+         {
+            path: 'bookings',
+            element: <Bookings />
+         },
+         {
+            path: 'manageUsers',
+            element: <AdminRoute><ManageUsers /></AdminRoute>
+         },
+         {
+            path: 'paymentHistory',
+            element: <PaymentHistory />
+         }
+
+      ]
+   }
+
+]);
+>>>>>>> arman

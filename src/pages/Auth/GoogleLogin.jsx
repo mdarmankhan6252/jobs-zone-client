@@ -2,16 +2,33 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const GoogleLogin = () => {
    const { signInWithGoogle } = useAuth();
+   const axiosPublic = useAxiosPublic();
    const navigate = useNavigate();
 
    const handleGoogleLogin = async () => {
       await signInWithGoogle()
-         .then(() => {
-            toast.success('Sign In Successful!')
+         .then((result) => {
+            console.log('result form google', result.user);
+            const postedUser = {
+               name: result.user.displayName,
+               photo: result.user.photoURL,
+               email: result.user.email,
+               role: 'general'
+            }
+            
+            axiosPublic.post('/user', postedUser)
+            .then(res => {
+               if (res.data.insertedId) {
+                  //
+               }
+            })
             navigate('/')
+            toast.success("Sign In Successful!")
+
          })
          .catch(error => {
             if (error.message) {
