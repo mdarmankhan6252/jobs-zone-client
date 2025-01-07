@@ -1,3 +1,4 @@
+import useAuth from "../../hooks/useAuth";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import DashboardTitle from "./DashboardTitle";
 import { useQuery } from '@tanstack/react-query'
@@ -5,11 +6,12 @@ import Swal from 'sweetalert2'
 
 const ManageJobs = () => {
    const axiosPublic = useAxiosPublic();
+   const { user } = useAuth();
 
    const { data: jobs = [], isLoading, refetch } = useQuery({
       queryKey: ['allJobs'],
       queryFn: async () => {
-         const res = await axiosPublic.get('/allJobs')
+         const res = await axiosPublic.get(`/allJobs?email=${user?.email}`)
          return res.data;
       }
    })
