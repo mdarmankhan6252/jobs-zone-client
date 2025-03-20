@@ -9,7 +9,7 @@ const TalentProfile = () => {
     <div className=" max-w-7xl mx-auto px-4 py-16 md:px-8 md:py-24 ">
       <div className="no-scrollbar -mt-28 mb-8 flex flex-col items-center justify-items-center gap-y-6 overflow-x-auto md:-mx-8 md:-mt-44 md:mb-16 md:flex-row md:gap-x-6 md:px-8">
         {/* Card 1 */}
-        <div className="mb-8 max-w-sm flex-shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
+        <div className="mb-8 max-w-sm shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
           <div className="flex flex-col items-center justify-center">
             <h2 className="mb-2 text-xl font-medium text-violet-700">
               Talent profile
@@ -55,7 +55,7 @@ const TalentProfile = () => {
             </div>
             <div className="mb-8 flex flex-row items-center">
               <img
-                className="mr-2 h-6 w-6 flex-shrink-0"
+                className="mr-2 h-6 w-6 shrink-0"
                 src="https://i.ibb.co.com/m5gC4H0/Himalayas-Logo1.png"
                 alt=""
               />
@@ -65,14 +65,14 @@ const TalentProfile = () => {
             </div>
           </div>
           <a
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
             href="/"
           >
             Edit your profile
           </a>
         </div>
         {/* Card 2 */}
-        <div className="mb-8 max-w-sm flex-shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
+        <div className="mb-8 max-w-sm shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
           <div className="flex flex-col items-center justify-center">
             <h2 className="mb-2 text-xl font-medium text-violet-700">
               Company profile
@@ -116,7 +116,7 @@ const TalentProfile = () => {
             </div>
             <div className="mb-8 flex flex-row items-center">
               <img
-                className="mr-2 h-6 w-6 flex-shrink-0"
+                className="mr-2 h-6 w-6 shrink-0"
                 src="https://i.ibb.co.com/m5gC4H0/Himalayas-Logo1.png"
                 alt=""
               />
@@ -126,14 +126,14 @@ const TalentProfile = () => {
             </div>
           </div>
           <a
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
             href="/"
           >
             Create company profile
           </a>
         </div>
         {/* Card 3 */}
-        <div className="mb-8 max-w-sm flex-shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
+        <div className="mb-8 max-w-sm shrink-0 rounded-2xl border border-gray-200 bg-white  px-6 py-8 shadow-lg md:px-8">
           <div className="flex flex-col items-center justify-center">
             <h2 className="mb-2 text-xl font-medium text-violet-700">
               Pinned job post
@@ -180,7 +180,7 @@ const TalentProfile = () => {
             </div>
             <div className="mb-8 flex flex-row items-center">
               <img
-                className="mr-2 h-6 w-6 flex-shrink-0"
+                className="mr-2 h-6 w-6 shrink-0"
                 src="https://i.ibb.co.com/m5gC4H0/Himalayas-Logo1.png"
                 alt=""
               />
@@ -190,7 +190,7 @@ const TalentProfile = () => {
             </div>
           </div>
           <Link to="/payment"
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
           
           >
             Post a job

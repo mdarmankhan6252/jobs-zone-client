@@ -135,7 +135,7 @@ const AddBlog = () => {
             </div>
           )}
 
-          <input id="image" type="file" className="w-full p-2 border border-gray-200 rounded" onChange={uploadImage} required />
+          <input id="image" type="file" className="w-full p-2 border border-gray-200 rounded-sm" onChange={uploadImage} required />
         </div>
 
         {/* title */}
@@ -143,7 +143,7 @@ const AddBlog = () => {
           <label htmlFor="title" className="block mb-2 text-sm">
             Title
           </label>
-          <input id="title" type="text" className="w-full p-2 border border-gray-200 rounded" placeholder="Blog title" required />
+          <input id="title" type="text" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Blog title" required />
         </div>
 
         {/* category */}
@@ -151,7 +151,7 @@ const AddBlog = () => {
           <label htmlFor="category" className="block mb-2 text-sm">
             Category
           </label>
-          <select id="category" className="w-full p-2 border border-gray-200 rounded" required>
+          <select id="category" className="w-full p-2 border border-gray-200 rounded-sm" required>
             <option value="" selected>
               Select
             </option>
@@ -168,7 +168,7 @@ const AddBlog = () => {
           <label htmlFor="summery" className="block mb-2 text-sm">
             Summery
           </label>
-          <textarea id="summery" className="w-full p-2 border border-gray-200 rounded" rows={4} placeholder="Blog summery" required></textarea>
+          <textarea id="summery" className="w-full p-2 border border-gray-200 rounded-sm" rows={4} placeholder="Blog summery" required></textarea>
         </div>
 
         {/* blog description */}
@@ -176,7 +176,7 @@ const AddBlog = () => {
           <label htmlFor="description" className="block mb-2 text-sm">
             Description
           </label>
-          <textarea id="description" className="w-full p-2 border border-gray-200 rounded" rows={4} placeholder="Blog description" required></textarea>
+          <textarea id="description" className="w-full p-2 border border-gray-200 rounded-sm" rows={4} placeholder="Blog description" required></textarea>
         </div>
 
         {/* tags */}
@@ -188,7 +188,7 @@ const AddBlog = () => {
           {/* show tags in a box */}
           <div className={`flex flex-wrap gap-4 ${tags[0] === "" || tags[0] === " " ? "mb-0" : "mb-4"} ${tags.length === 0 ? "hidden" : ""}`}>
             {tags.map((tag, index) => (
-              <span key={index} className={`text-primary-700 bg-primary-100 p-2 rounded ${tag === "" || tag === " " ? "hidden" : ""}`}>
+              <span key={index} className={`text-primary-700 bg-primary-100 p-2 rounded-sm ${tag === "" || tag === " " ? "hidden" : ""}`}>
                 {tag}
               </span>
             ))}
@@ -197,7 +197,7 @@ const AddBlog = () => {
           <input
             id="tags"
             type="text"
-            className="w-full p-2 border border-gray-200 rounded"
+            className="w-full p-2 border border-gray-200 rounded-sm"
             placeholder="tag1, tag2, tag3"
             value={tags}
             onChange={(e) => handleStoreTags(e)}
@@ -216,7 +216,7 @@ const AddBlog = () => {
               id="author"
               type="text"
               value={user?.displayName}
-              className="w-full p-2 border border-gray-200 rounded cursor-not-allowed"
+              className="w-full p-2 border border-gray-200 rounded-sm cursor-not-allowed"
               placeholder="Author"
               disabled
             />
@@ -229,14 +229,14 @@ const AddBlog = () => {
               id="authorEmail"
               type="email"
               value={user?.email}
-              className="w-full p-2 border border-gray-200 rounded cursor-not-allowed"
+              className="w-full p-2 border border-gray-200 rounded-sm cursor-not-allowed"
               placeholder="Author Email"
               disabled
             />
           </div>
         </div>
 
-        <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded mt-4">Add blog</button>
+        <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded-sm mt-4">Add blog</button>
       </form>
     </div>
   );

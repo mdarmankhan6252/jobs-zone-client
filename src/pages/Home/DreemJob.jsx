@@ -15,11 +15,11 @@ const DreemJob = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-3">
-            <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full md:w-max ">
+            <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full md:w-max ">
               <FcGoogle size={25}></FcGoogle> <span>Sign in with google</span>
             </button>
             <a
-              className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 w-full md:w-max"
+              className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 w-full md:w-max"
               href="/"
             >
               Sign up

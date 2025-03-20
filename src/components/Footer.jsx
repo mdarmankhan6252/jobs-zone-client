@@ -19,14 +19,14 @@ const Footer = () => {
       <div className="mb-12 mt-8 flex items-center justify-between md:mb-16 text-gray-500">
         <div className="flex flex-row items-center gap-3">
           <a
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700  focus:ring-gray-100 px-2.5 py-2.5"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700  focus:ring-gray-100 px-2.5 py-2.5"
             href="/"
           >
             <FaFacebook size={25} className="h-5 w-5 fill-current"></FaFacebook>
             <span className="sr-only">Facebook</span>
           </a>
           <a
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700  focus:ring-gray-100 px-2.5 py-2.5"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700  focus:ring-gray-100 px-2.5 py-2.5"
             href="https://www.linkedin.com/company/himalayasapp"
           >
             <FaLinkedin className="h-5 w-5 fill-current"></FaLinkedin>
@@ -123,9 +123,9 @@ const Footer = () => {
             top recruiters.
           </p>
         </div>
-        <div className="flex flex-col-reverse gap-3 md:flex-row"><button className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-base py-3 px-5 w-full md:w-max">
+        <div className="flex flex-col-reverse gap-3 md:flex-row"><button className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-base py-3 px-5 w-full md:w-max">
         <FcGoogle size={25} className="h-auto"></FcGoogle> Sign up with Google</button>
-        <a className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full md:w-max" href="/signup">Sign up</a></div>
+        <a className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full md:w-max" href="/signup">Sign up</a></div>
       </div>
       <div className="w-full border-t border-gray-100 pt-8"><p className="text-gray-600">© 2024 Himalayas. All rights reserved. Built with <a className="font-medium hover:text-gray-700" href="/">Untitled UI</a>. Logos provided by <a className="font-medium hover:text-gray-700" href="/">Logo.dev</a></p></div>
     </div>

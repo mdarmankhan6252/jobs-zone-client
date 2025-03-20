@@ -46,7 +46,7 @@ const RelatedArticles = () => {
             </p>
           </div>
           <Link className="flex items-center">
-            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img
                 alt="Himalayas"
                 width="40"
@@ -92,7 +92,7 @@ const RelatedArticles = () => {
             </p>
           </div>
           <Link to='/' className="flex items-center" >
-            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img
                 alt="Himalayas"
                 width="40"
@@ -138,7 +138,7 @@ const RelatedArticles = () => {
             </p>
           </div>
           <Link to='/' className="flex items-center">
-            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img
                 alt="Himalayas"
                 width="40"

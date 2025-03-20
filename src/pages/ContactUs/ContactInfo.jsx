@@ -7,7 +7,7 @@ const ContactInfo = () => {
   return (
     <div className="flex flex-wrap md:flex-nowrap gap-y-10 gap-x-4 justify-center md:justify-between items-center py-28">
       <div className="text-center w-full max-w-[305px]">
-        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-sm">
+        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-xs">
           <FiPhone className="text-2xl text-[#6b46c1]" />
         </div>
 
@@ -24,7 +24,7 @@ const ContactInfo = () => {
       </div>
 
       <div className="text-center w-full max-w-[305px]">
-        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-sm">
+        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-xs">
           <LuMail className="text-2xl text-[#6b46c1]" />
         </div>
 
@@ -41,7 +41,7 @@ const ContactInfo = () => {
       </div>
 
       <div className="text-center w-full max-w-[305px]">
-        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-sm">
+        <div className="inline-flex size-14 flex-col justify-center items-center rounded-xl bg-[#d8d1eb4d] shadow-xs">
           <CiLocationOn className="text-2xl text-[#6b46c1]" />
         </div>
 

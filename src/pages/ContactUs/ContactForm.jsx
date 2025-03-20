@@ -12,25 +12,25 @@ const ContactForm = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <div className="md:w-1/2">
               <label className="block mb-2 text-sm">Name</label>
-              <input type="text" className="w-full p-2 border border-gray-200 rounded" placeholder="Your name" />
+              <input type="text" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Your name" />
             </div>
             <div className="md:w-1/2">
               <label className="block mb-2 text-sm">Email</label>
-              <input type="email" className="w-full p-2 border border-gray-200 rounded" placeholder="Your email" />
+              <input type="email" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Your email" />
             </div>
           </div>
 
           <div className="mt-4">
             <label className="block mb-2 text-sm">Subject</label>
-            <input type="text" className="w-full p-2 border border-gray-200 rounded" placeholder="Subject" />
+            <input type="text" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Subject" />
           </div>
 
           <div className="my-4">
             <label className="block mb-2 text-sm">Message</label>
-            <textarea className="w-full p-2 border border-gray-200 rounded" rows={4} placeholder="Your message"></textarea>
+            <textarea className="w-full p-2 border border-gray-200 rounded-sm" rows={4} placeholder="Your message"></textarea>
           </div>
 
-          <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded">Send</button>
+          <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded-sm">Send</button>
         </form>
       </div>
     </div>

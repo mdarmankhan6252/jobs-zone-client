@@ -47,11 +47,11 @@ const Articles = () => {
               Find your dream remote job
             </p>
             <div className="flex flex-col  gap-3">
-              <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full ">
+              <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full ">
                 <FcGoogle size={25}></FcGoogle> <span>Sign in with google</span>
               </button>
               <a
-                className="inline-flex  gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 "
+                className="inline-flex  gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 "
                 href="/"
               >
                 Sign up
@@ -119,9 +119,9 @@ const Articles = () => {
           <div className="mb-8 border-b border-gray-100 pb-8">
             <p className="mb-5 text-[14px] font-medium text-gray-900">Share this article</p>
             <div className="flex gap-x-3">
-              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaTwitter className="fill-current text-gray-500" size={25}></FaTwitter></Link>
-              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaFacebook className="fill-current text-gray-500" size={25}></FaFacebook></Link>
-              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaLinkedin className="fill-current text-gray-500" size={25}></FaLinkedin></Link>
+              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaTwitter className="fill-current text-gray-500" size={25}></FaTwitter></Link>
+              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaFacebook className="fill-current text-gray-500" size={25}></FaFacebook></Link>
+              <Link to={''} className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"> <FaLinkedin className="fill-current text-gray-500" size={25}></FaLinkedin></Link>
             </div>
           </div>
           <div className="flex flex-col gap-y-5">

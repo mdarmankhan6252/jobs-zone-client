@@ -87,13 +87,13 @@ const AddJob = () => {
             <label htmlFor="title" className="block mb-2 text-sm">
               Title
             </label>
-            <input id="title" type="text" className="w-full p-2 border border-gray-200 rounded" placeholder="Job title" required />
+            <input id="title" type="text" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Job title" required />
           </div>
           <div className="md:w-1/2">
             <label htmlFor="category" className="block mb-2 text-sm">
               Category
             </label>
-            <select id="category" className="w-full p-2 border border-gray-200 rounded" required>
+            <select id="category" className="w-full p-2 border border-gray-200 rounded-sm" required>
               <option value="" selected>
                 Select
               </option>
@@ -112,7 +112,7 @@ const AddJob = () => {
             <label htmlFor="jobType" className="block mb-2 text-sm">
               Job Type
             </label>
-            <select id="jobType" className="w-full p-2 border border-gray-200 rounded" required>
+            <select id="jobType" className="w-full p-2 border border-gray-200 rounded-sm" required>
               <option value="" selected>
                 Select
               </option>
@@ -127,7 +127,7 @@ const AddJob = () => {
             <label htmlFor="experienceLevel" className="block mb-2 text-sm">
               Experience Level
             </label>
-            <select id="experienceLevel" className="w-full p-2 border border-gray-200 rounded" required>
+            <select id="experienceLevel" className="w-full p-2 border border-gray-200 rounded-sm" required>
               <option value="" selected>
                 Select
               </option>
@@ -146,7 +146,7 @@ const AddJob = () => {
             <label htmlFor="location" className="block mb-2 text-sm">
               Location
             </label>
-            <select id="location" className="w-full p-2 border border-gray-200 rounded" required>
+            <select id="location" className="w-full p-2 border border-gray-200 rounded-sm" required>
               <option value="" selected>
                 Select
               </option>
@@ -161,7 +161,7 @@ const AddJob = () => {
             <label htmlFor="salary" className="block mb-2 text-sm">
               Salary
             </label>
-            <input id="salary" type="number" className="w-full p-2 border border-gray-200 rounded" placeholder="Salary" required />
+            <input id="salary" type="number" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Salary" required />
           </div>
         </div>
 
@@ -171,13 +171,13 @@ const AddJob = () => {
             <label htmlFor="companyName" className="block mb-2 text-sm">
               Company Name
             </label>
-            <input id="companyName" type="text" className="w-full p-2 border border-gray-200 rounded" placeholder="Company Name" required />
+            <input id="companyName" type="text" className="w-full p-2 border border-gray-200 rounded-sm" placeholder="Company Name" required />
           </div>
           <div className="md:w-1/2">
             <label htmlFor="deadline" className="block mb-2 text-sm">
               Deadline
             </label>
-            <input id="deadline" type="date" className="w-full p-2 border border-gray-200 rounded" required />
+            <input id="deadline" type="date" className="w-full p-2 border border-gray-200 rounded-sm" required />
           </div>
         </div>
 
@@ -186,7 +186,7 @@ const AddJob = () => {
           <label htmlFor="description" className="block mb-2 text-sm">
             Description
           </label>
-          <textarea id="description" className="w-full p-2 border border-gray-200 rounded" rows={4} placeholder="Job description" required></textarea>
+          <textarea id="description" className="w-full p-2 border border-gray-200 rounded-sm" rows={4} placeholder="Job description" required></textarea>
         </div>
 
         {/* author information */}
@@ -201,7 +201,7 @@ const AddJob = () => {
               id="author"
               type="text"
               value={user?.displayName}
-              className="w-full p-2 border border-gray-200 rounded cursor-not-allowed"
+              className="w-full p-2 border border-gray-200 rounded-sm cursor-not-allowed"
               placeholder="Author"
               disabled
             />
@@ -214,14 +214,14 @@ const AddJob = () => {
               id="authorEmail"
               type="email"
               value={user?.email}
-              className="w-full p-2 border border-gray-200 rounded cursor-not-allowed"
+              className="w-full p-2 border border-gray-200 rounded-sm cursor-not-allowed"
               placeholder="Author Email"
               disabled
             />
           </div>
         </div>
 
-        <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded mt-4">Add job</button>
+        <button className="w-full py-2 bg-[#6b46c1] transition-all hover:bg-[#553c9a] text-white rounded-sm mt-4">Add job</button>
       </form>
     </div>
   );

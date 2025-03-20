@@ -16,13 +16,13 @@ const Banner = () => {
         <div className="flex flex-col gap-3 sm:flex-row sm:w-max">
           <Link
             to="/jobs"
-            className="w-full sm:w-auto font-medium rounded-lg transition-colors focus:ring-4 focus:outline-none disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-5"
+            className="w-full sm:w-auto font-medium rounded-lg transition-colors focus:ring-4 focus:outline-hidden disabled:text-gray-300 disabled:border-gray-100 border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-5"
           >
             Hire remote workers
           </Link>
           <Link
             to="/jobs"
-            className="w-full sm:w-auto inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none border border-transparent bg-[#6b46c1] text-white hover:bg-[#553c9a] disabled:bg-[#e9d8fd] focus:ring-[#f5ebff] text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-5"
+            className="w-full sm:w-auto inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden border border-transparent bg-[#6b46c1] text-white hover:bg-[#553c9a] disabled:bg-[#e9d8fd] focus:ring-[#f5ebff] text-sm sm:text-base py-2 sm:py-3 px-4 sm:px-5"
           >
             <LuSearch />
             Find a job

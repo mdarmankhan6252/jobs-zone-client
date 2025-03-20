@@ -29,7 +29,7 @@ const ForEmployers = () => {
         {/* Card section */}
         <div className=" grid grid-cols-1 gap-6 no-scrollbar bg-gray-50 pb-16 sm:px-4 md:-mx-8 md:flex md:px-8 md:pb-24 xl:place-content-center md:gap-8">
           <Link to={"/"}>
-            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:flex-shrink-0 md:px-8 md:py-8 ">
+            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:shrink-0 md:px-8 md:py-8 ">
               <div className="relative -mx-6 -mt-8 md:-mx-8 bg-[url('https://cdn-images.himalayas.app/gradient-bg-01.jpg')]">
                 <div className="absolute inset-0 bg-feature-card-gradient"></div>
                 <img
@@ -50,14 +50,14 @@ const ForEmployers = () => {
                 research and discover remote companies.
               </p>
               <span 
-                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
+                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-hidden items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
               >
                 Create a company profile
               </span>
             </div>
           </Link>
           <Link to={"/"}>
-            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:flex-shrink-0 md:px-8 md:py-8 ">
+            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:shrink-0 md:px-8 md:py-8 ">
               <div className="relative -mx-6 -mt-8 md:-mx-8 bg-[url('https://cdn-images.himalayas.app/gradient-bg-02.jpg')]">
                 <div className="absolute inset-0 bg-feature-card-gradient"></div>
                 <img
@@ -78,14 +78,14 @@ const ForEmployers = () => {
                 world's best remote talent.
               </p>
               <span
-                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
+                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-hidden items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
               >
                 Post a job
               </span>
             </div>
           </Link>
           <Link to={"/"}>
-            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:flex-shrink-0 md:px-8 md:py-8 ">
+            <div className="bg-white rounded-xl p-5 transition-all ease-in-out md:p-6 shadow-[0_0_7px_0] duration-500 hover:shadow-gray-400 shadow-purple-200 cursor-pointer px-6 overflow-hidden py-8 md:w-96 md:shrink-0 md:px-8 md:py-8 ">
               <div className="relative -mx-6 -mt-8 md:-mx-8 bg-[url('https://cdn-images.himalayas.app/gradient-bg-03.jpg')]">
                 <div className="absolute inset-0 bg-feature-card-gradient"></div>
                 <img
@@ -106,7 +106,7 @@ const ForEmployers = () => {
                 attract the best talent.
               </p>
               <span
-                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-none items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
+                className="inline-flex gap-x-2 font-medium hover:bg-[#553C9A]  bg-[#6a4ac3] outline-hidden items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent  text-white hover:bg-primary-800   text-base py-3 px-5 min-w-full"
                 href="/"
               >
                 Showcase employee brand

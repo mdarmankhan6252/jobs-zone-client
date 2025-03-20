@@ -106,7 +106,7 @@ const Faqs = () => {
           </div>
           <a
             href="/"
-            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100  text-[16px] py-3 px-5"
+            className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100  text-[16px] py-3 px-5"
           >
             Get in touch
           </a>

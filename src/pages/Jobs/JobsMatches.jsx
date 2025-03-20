@@ -43,7 +43,7 @@ const JobsMatches = () => {
           <div className=" flex items-center gap-x-2 rounded-lg border border-gray-100 bg-gray-50 p-1">
             <Link
               to={"/"}
-              className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max text-[14px]  hover:shadow text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
+              className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max text-[14px]  hover:shadow-sm text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
             >
               Jobs
               <span className="text-center border rounded-md font-medium w-max h-max text-[18px] px-2 py-0.5 ml-2 bg-white">
@@ -52,7 +52,7 @@ const JobsMatches = () => {
             </Link>
             <Link
               to={"/"}
-              className="flex gap-x-2  font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max text-[14px]  hover:shadow  text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
+              className="flex gap-x-2  font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max text-[14px]  hover:shadow-sm  text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
             >
               Matches
               <span className="text-center border rounded-md font-medium w-max h-max text-[18px] px-2 py-0.5 ml-2 bg-white">
@@ -61,7 +61,7 @@ const JobsMatches = () => {
             </Link>
             <Link
               to={"/"}
-              className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max text-[14px]  hover:shadow text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
+              className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max text-[14px]  hover:shadow-sm text-gray-700 hover:bg-gray-50 focus:ring-gray-100 px-3 py-2"
             >
               Saves
               <span className="text-center border rounded-md font-medium w-max h-max text-[18px] px-2 py-0.5 ml-2 bg-white">
@@ -70,7 +70,7 @@ const JobsMatches = () => {
             </Link>
           </div>
           <div className="hidden xl:block">
-            <div className="flex relative items-center gap-x-2 border border-gray-200 py-3 px-4 rounded-md shadow ">
+            <div className="flex relative items-center gap-x-2 border border-gray-200 py-3 px-4 rounded-md shadow-sm ">
               <img
                 className="w-[18px] h-[13px]"
                 src="https://i.ibb.co.com/7gp2mK7/Downbar3.png"
@@ -92,7 +92,7 @@ const JobsMatches = () => {
         {/* jobs card. */}
 
         {jobs.map(job => <div key={job._id} className="flex flex-col gap-y-4 pb-4 xl:w-[850px] ">
-          <div className="flex flex-shrink-0 cursor-pointer flex-col items-start gap-x-5 rounded-xl border border-violet-400 bg-white p-5 shadow-sm transition-shadow backface-hidden hover:shadow-xl md:flex-row md:p-6">
+          <div className="flex shrink-0 cursor-pointer flex-col items-start gap-x-5 rounded-xl border border-violet-400 bg-white p-5 shadow-xs transition-shadow backface-hidden hover:shadow-xl md:flex-row md:p-6">
             <div className="w-[48px] h-[48px] md:w-max">
               <img
                 className="h-full w-full rounded-full border border-gray-200 bg-white"
@@ -107,7 +107,7 @@ const JobsMatches = () => {
                   <p className="text-xl font-medium text-gray-900  ">
                     {job.title}
                   </p>
-                  <p className="hidden flex-shrink-0 text-gray-600 md:block">
+                  <p className="hidden shrink-0 text-gray-600 md:block">
                     Deadline : <span>{job.deadline}</span>
                   </p>
                 </div>
@@ -162,11 +162,11 @@ const JobsMatches = () => {
       {/* Right Side  */}
       <div className="hidden w-full flex-col gap-y-6 xl:flex">
         <div className="w-[355px] rounded-xl bg-gray-50 p-6">
-          <div className="w-12 rounded-lg  border border-gray-200 shadow-sm bg-white  text-gray-700 p-3 ">
+          <div className="w-12 rounded-lg  border border-gray-200 shadow-xs bg-white  text-gray-700 p-3 ">
             <IoSearchOutline className="h-6 w-6 text-gray-700"></IoSearchOutline>
           </div>
           {/* Card  */}
-          <div className=" max-w-sm flex-shrink-0 rounded-2xl pt-4  ">
+          <div className=" max-w-sm shrink-0 rounded-2xl pt-4  ">
             <div className="">
               <h2 className="mb-2 text-xl font-medium ">
                 Find your dream temote job
@@ -195,7 +195,7 @@ const JobsMatches = () => {
               </div>
             </div>
             <a
-              className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
+              className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-violet-100 text-[16px] py-3 px-5 w-full"
               href="/"
             >
               Sign up for free
@@ -204,7 +204,7 @@ const JobsMatches = () => {
 
         </div>
         {/* Related Searches */}
-        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow transition-all ease-in-out md:p-6 flex flex-col cursor-default gap-y-6 md:hover:shadow-none">
+        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all ease-in-out md:p-6 flex flex-col cursor-default gap-y-6 md:hover:shadow-none">
           <h2 className="mb-0 mt-0 text-lg font-medium text-gray-900 md:text-xl ">Related Searches</h2>
           <div className="flex flex-col gap-y-4">
             <Link to={'/'}> <span>Python Software Developer</span></Link>

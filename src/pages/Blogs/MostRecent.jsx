@@ -22,7 +22,7 @@ const MostRecent = () => {
 
   return (
     <div className="max-w-7xl mx-auto flex flex-col xl:flex-row ">
-      <div className="mt-8 flex-shrink-0 px-4 md:mb-4 md:mt-16 md:px-8 xl:mb-24 xl:h-auto">
+      <div className="mt-8 shrink-0 px-4 md:mb-4 md:mt-16 md:px-8 xl:mb-24 xl:h-auto">
         <div className="xl:sticky xl:top-[88px] xl:w-[280px]">
           <div className="pb-4 ">
             <div className="flex items-center justify-between border-t border-gray-100 pt-3 pb-4">
@@ -38,13 +38,13 @@ const MostRecent = () => {
                 Find your dream remote job
               </p>
               <div className="flex flex-col  gap-3">
-                <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full  ">
+                <button className="inline-flex gap-x-2 font-medium justify- items-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled:border-gray-100  border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-100 text-[16px] py-3 px-5 w-full  ">
                   <FcGoogle size={25}></FcGoogle>{" "}
                   <span>Sign in with google</span>
                 </button>
                 <Link
                   to={"/"}
-                  className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 w-full "
+                  className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max border border-transparent bg-violet-700 text-white hover:bg-violet-800 disabled:bg-violet-200 focus:ring-red-100 text-[16px] py-3 px-5 w-full "
                   href="/"
                 >
                   Sign up

@@ -44,7 +44,7 @@ const ClaimProfile = () => {
           Claim this profile
         </Link>
         <Link className="mb-6 flex items-center gap-x-3" to="#">
-          <span className="relative inline-block h-12 w-12 flex-shrink-0">
+          <span className="relative inline-block h-12 w-12 shrink-0">
             <img alt="Jobs Zone Logo" className="absolute h-full w-full rounded-full bg-white" src={logo} />
           </span>
           <div className="flex items-center">
@@ -108,7 +108,7 @@ const ClaimProfile = () => {
                     height={8}
                     viewBox="0 0 8 8"
                     width={8}
-                    className="-ml-0.5 mr-1 flex-shrink-0 fill-primary-500 stroke-primary-500"
+                    className="-ml-0.5 mr-1 shrink-0 fill-primary-500 stroke-primary-500"
                   >
                     <circle cx={4} cy={4} fill="#6B46C1" r={3} />
                   </svg>
@@ -134,7 +134,7 @@ const ClaimProfile = () => {
             <div className="flex gap-x-3">
               <Link
                 to="#"
-                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
+                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ const ClaimProfile = () => {
               </Link>
               <Link
                 to="#"
-                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
+                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ const ClaimProfile = () => {
               </Link>
               <Link
                 to="#"
-                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
+                className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 px-2.5 py-2.5"
               >
                 <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500">
                   <g clipPath="url(#clip0_7204_32067)" fill="currentColor">
@@ -190,7 +190,7 @@ const ClaimProfile = () => {
           </div>
         </div>
         <Link
-          className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 text-base px-4.5 py-2.5 w-full"
+          className="inline-flex gap-x-2 font-medium items-center justify-center rounded-lg duration-150 h-max border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 text-base px-4.5 py-2.5 w-full"
           to="#"
         >
           Visit himalayas.app

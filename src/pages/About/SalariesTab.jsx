@@ -5,8 +5,8 @@ const SalariesTab = () => {
     <div>
       <div className="border-b border-gray-200">
         <h2 className="mb-4 text-2xl font-medium text-gray-900 md:mb-5">How much does Jobs Zone pay remote employees?</h2>
-        <div className="my-8 flex flex-col items-center rounded-xl border border-gray-200 p-8 shadow-xs md:my-12">
-          <span className="rounded-lg h-max border border-gray-200 shadow-xs p-3 mb-5">
+        <div className="my-8 flex flex-col items-center rounded-xl border border-gray-200 p-8 shadow-2xs md:my-12">
+          <span className="rounded-lg h-max border border-gray-200 shadow-2xs p-3 mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}

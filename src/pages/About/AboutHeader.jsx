@@ -23,7 +23,7 @@ const AboutHeader = ({ activeTabState }) => {
         <div>
           <div className="flex flex-col gap-x-6 md:flex-row">
             <span className="inline-block h-16 w-16 mb-5 md:mb-0 md:h-20 md:w-20">
-              <img alt="Jobs Zone Logo" className="h-full w-full rounded-full bg-white border-2 border-white shadow-sm md:border-4" src={logo} />
+              <img alt="Jobs Zone Logo" className="h-full w-full rounded-full bg-white border-2 border-white shadow-xs md:border-4" src={logo} />
             </span>
             <div className="flex flex-1 flex-col">
               <div className="mb-3 flex items-center md:mb-5">
@@ -31,7 +31,7 @@ const AboutHeader = ({ activeTabState }) => {
               </div>
               <p className="mb-8 text-gray-700 md:mb-16 md:text-xl">COVID-19 has caused a permanent shift towards remote work.</p>
             </div>
-            <button className="gap-x-2 font-medium items-center justify-center rounded-lg duration-300 h-max border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 text-base py-3 px-5 hidden w-max xl:block">
+            <button className="gap-x-2 font-medium items-center justify-center rounded-lg duration-300 h-max border border-gray-200 shadow-2xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 text-base py-3 px-5 hidden w-max xl:block">
               Share company
             </button>
           </div>

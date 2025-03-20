@@ -168,13 +168,13 @@ const RemoteCompanies = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         <div className="flex items-center mb-8">
           <div className="flex flex-row-reverse">
-            <span className="relative inline-block h-10 w-10 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img alt="Branex LLC logo" className="h-full w-full rounded-full bg-white" src="https://cdn-images.himalayas.app/8hemznup28ug7ygrodetq21jjcfw" />
             </span>
-            <span className="relative inline-block h-10 w-10 -mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 -mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img alt="Sticky logo" className="h-full w-full rounded-full bg-white" src="https://cdn-images.himalayas.app/ubn20k44qf1dwixcgv1xiswzamar" />
             </span>
-            <span className="relative inline-block h-10 w-10 -mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+            <span className="relative inline-block h-10 w-10 -mr-3 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
               <img alt="Pressable logo" className="h-full w-full rounded-full bg-white" src="https://cdn-images.himalayas.app/3rpw0jcqx3nnmp8o8rsfxfl8z7bw" />
             </span>
           </div>
@@ -212,10 +212,10 @@ const RemoteCompanies = () => {
           {companies.map((company) => (
             <div
               key={company.name}
-              className="rounded-xl border border-gray-200 bg-white p-5 shadow-xs transition-all ease-in-out md:p-6 md:hover:shadow-lg cursor-pointer"
+              className="rounded-xl border border-gray-200 bg-white p-5 shadow-2xs transition-all ease-in-out md:p-6 md:hover:shadow-lg cursor-pointer"
             >
               <div className="flex flex-wrap justify-between mb-4 items-start">
-                <span className="relative inline-block h-10 w-10 md:h-12 md:w-12 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-xs flex-shrink-0">
+                <span className="relative inline-block h-10 w-10 md:h-12 md:w-12 after:absolute after:bottom-0 after:left-0 after:right-0 after:top-0 after:rounded-full after:border after:border-gray-900 after:border-opacity-10 after:shadow-2xs shrink-0">
                   <img alt={`${company.name} logo`} className="h-full w-full rounded-full bg-white" src={company.logo} />
                 </span>
                 {company.jobs > 0 && (
@@ -281,7 +281,7 @@ const RemoteCompanies = () => {
                       height={8}
                       viewBox="0 0 8 8"
                       width={8}
-                      className="-ml-0.5 mr-1 flex-shrink-0 fill-[#9f7aea] stroke-[#9f7aea]"
+                      className="-ml-0.5 mr-1 shrink-0 fill-[#9f7aea] stroke-[#9f7aea]"
                     >
                       <circle cx={4} cy={4} fill="#currentColor" r={3} />
                     </svg>

@@ -9,7 +9,7 @@ const Profile = () => {
 
             <div className="py-5 text-center">
                <p className="block text-xl font-bold text-gray-800">{user?.displayName}</p>
-               <span className="text-sm bg-purple-600 text-white px-3 py-1 rounded">Admin</span>
+               <span className="text-sm bg-purple-600 text-white px-3 py-1 rounded-sm">Admin</span>
             </div>
          </div>
       </div>

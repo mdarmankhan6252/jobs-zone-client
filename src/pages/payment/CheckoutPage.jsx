@@ -41,7 +41,7 @@ const CheckoutPage = ({ clientSecret }) => {
       <button
         type="submit"
         disabled={!stripe}
-        className="bg-purple-600 mt-5 text-white py-2 px-4 rounded hover:bg-purple-700 disabled:opacity-50"
+        className="bg-purple-600 mt-5 text-white py-2 px-4 rounded-sm hover:bg-purple-700 disabled:opacity-50"
       >
         Submit Payment
       </button>

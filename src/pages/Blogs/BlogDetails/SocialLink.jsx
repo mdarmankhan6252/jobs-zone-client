@@ -14,13 +14,13 @@ const SocialLink = () => {
         <div className="mb-4 flex gap-x-2">
           <Link
             to={""}
-            className="inline-flex items-center border rounded-sm font-medium w-max h-max px-[6px] py-[2px] bg-white hover:bg-gray-50"
+            className="inline-flex items-center border rounded-xs font-medium w-max h-max px-[6px] py-[2px] bg-white hover:bg-gray-50"
           >
             Interviewing
           </Link>
           <Link
             to={""}
-            className="inline-flex items-center border rounded-sm font-medium w-max h-max px-[6px] py-[2px] bg-white hover:bg-gray-50"
+            className="inline-flex items-center border rounded-xs font-medium w-max h-max px-[6px] py-[2px] bg-white hover:bg-gray-50"
           >
             Interview questions
           </Link>
@@ -28,14 +28,14 @@ const SocialLink = () => {
         <div className="flex gap-x-3">
           <Link
             to={""}
-            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white  focus:ring-gray-700 px-2 py-2"
+            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white  focus:ring-gray-700 px-2 py-2"
           >
             <LuCopy className=" " size={25}></LuCopy>
             <span className="text-gray-700">Copy link</span>
           </Link>
           <Link
             to={""}
-            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
+            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
           >
             <FaFacebook
               className="fill-current text-gray-500"
@@ -44,7 +44,7 @@ const SocialLink = () => {
           </Link>
           <Link
             to={""}
-            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
+            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
           >
             <FaLinkedin
               className="fill-current text-gray-500"
@@ -53,7 +53,7 @@ const SocialLink = () => {
           </Link>
           <Link
             to={""}
-            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-none h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-sm hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
+            className="flex gap-x-2 font-medium items-center justify-center rounded-lg transition-colors focus:ring-4 focus:outline-hidden h-max disabled:text-gray-300 disabled-border-gray-100 border border-gray-200 shadow-xs hover:bg-gray-50 hover:text-gray-800 bg-white text-gray-700 focus:ring-gray-700 px-2 py-2"
           >
             <FaLinkedin
               className="fill-current text-gray-500"

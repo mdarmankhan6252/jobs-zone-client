@@ -15,7 +15,7 @@ const JobBoard = () => {
       </p>
       <div className="grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 md:gap-y-6 2xl:grid-cols-3">
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -39,7 +39,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <svg
               width="20"
               height="20"
@@ -70,7 +70,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <svg
               fill="none"
               height="20"
@@ -95,7 +95,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <SlRocket className="h-5 w-5 text-gray-700 md:h-6 md:w-6"></SlRocket>
           </div>
           <h4 className="mb-1 text-lg font-medium md:mb-2 md:text-xl">
@@ -107,7 +107,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <AiFillFlag className="h-5 w-5 text-gray-700 md:h-6 md:w-6"></AiFillFlag>
           </div>
           <h4 className="mb-1 text-lg font-medium md:mb-2 md:text-xl">
@@ -119,7 +119,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <RiGroupLine className="h-5 w-5 text-gray-700 md:h-6 md:w-6"></RiGroupLine>
           </div>
           <h4 className="mb-1 text-lg font-medium md:mb-2 md:text-xl">
@@ -131,7 +131,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <svg
               width="20"
               height="20"
@@ -162,7 +162,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <svg
               width="20"
               height="20"
@@ -186,7 +186,7 @@ const JobBoard = () => {
           </p>
         </div>
         <div>
-          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
+          <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-2xs md:mb-5 md:h-12 md:w-12 md:rounded-[10px]">
             <IoIosCheckmarkCircleOutline className="h-5 w-5 text-gray-700 md:h-6 md:w-6"></IoIosCheckmarkCircleOutline>
           </div>
           <h4 className="mb-1 text-lg font-medium md:mb-2 md:text-xl">
